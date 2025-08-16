@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>T•Solutions — Web, Apps, Games & AI</title>
-  <meta name="description" content="We build responsive websites, custom apps, interactive experiences, and AI-powered tools with premium UX/UI and performance." />
+  <meta name="description" content="T•Solutions builds modern, high-performance websites, apps, games and AI features with premium UX/UI." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="img/ts-badge-gradient.png" />
-  <!-- Ikonice (Boxicons) za mail/LinkedIn -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- ===== NAVBAR (opciono: možeš ga kopirati i na About/Portfolio) ===== -->
+  <!-- NAVBAR -->
   <header class="site-header">
     <a class="brand" href="index.html">
       <img src="img/ts-badge-gradient.png" alt="T•Solutions" width="40" height="40" />
@@ -25,58 +24,57 @@
     </nav>
   </header>
 
-  <!-- ===== HERO (mrda logo + typing headline) ===== -->
-  <section class="hero minimal">
-    <img class="hero-logo" src="img/ts-badge-gradient.png" alt="TS" width="220" height="220">
-    <div class="hero-content container">
-      <h1 id="typing-headline">Need a responsive personalized website?</h1>
-      <p>Full-stack development, UX/UI, .NET, Games & AI — built to perform.</p>
-      <div class="cta">
-        <a class="btn" href="#services">Explore services</a>
-        <a class="link" href="about.html">About us</a>
+  <!-- HERO (static text + floating badge) -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>We build fast, elegant digital products.</h1>
+        <p>Websites & web apps • .NET services • Games • AI-powered features — crafted with UX/UI excellence.</p>
+        <div class="cta">
+          <a class="btn" href="#services">Explore services</a>
+          <a class="link" href="about.html">About us</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- pluta kao „balon“ -->
+        <img class="hero-logo" src="img/ts-badge-gradient.png" alt="TS badge" />
+        <!-- soft gradient blobs -->
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
+  <!-- SERVICES -->
   <section id="services" class="section container">
     <h2>What do you need?</h2>
     <div class="cards">
       <a class="card service" href="#contact" aria-label="Web Development contact">
         <h3>Web Development</h3>
-        <p>Responsive, SEO-optimized websites and web apps.</p>
+        <p>Responsive, SEO-ready websites and web apps.</p>
       </a>
       <a class="card service" href="#contact" aria-label="App Development contact">
         <h3>App Development</h3>
-        <p>Custom applications with modern UX and robust back-end.</p>
+        <p>Custom apps with clean UX and robust back-ends.</p>
       </a>
       <a class="card service" href="#contact" aria-label="Games and AI contact">
-        <h3>Game & AI Solutions</h3>
-        <p>Interactive experiences, Unity / Three.js, and AI features.</p>
+        <h3>Games & AI</h3>
+        <p>Interactive 3D, Unity / Three.js, and AI automation.</p>
       </a>
     </div>
   </section>
 
-  <!-- ===== CONTACT (Netlify Forms) ===== -->
+  <!-- CONTACT (Netlify Forms) -->
   <section id="contact" class="section container">
     <h2>Contact</h2>
-
-    <!-- Netlify form: OVDE SE STVARNO ŠALJE -->
-    <form name="contact-main"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you.html"
-          class="contact-form">
-
-      <!-- obavezno: hidden naziv forme -->
+    <form name="contact-main" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
       <input type="hidden" name="form-name" value="contact-main" />
-      <!-- honeypot polje (skriveno ljudima) -->
       <p class="hidden"><label>Don’t fill this: <input name="bot-field" /></label></p>
 
       <div class="grid-2">
         <label>Full name
-          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="text" name="name" placeholder="Your name" required />
         </label>
         <label>Email
           <input type="email" name="email" placeholder="you@example.com" required />
@@ -94,24 +92,18 @@
       </label>
 
       <label>Message
-        <textarea name="message" rows="5" placeholder="Briefly describe your idea, features, timeline and budget…" required></textarea>
+        <textarea name="message" rows="5" placeholder="Tell us about the idea, key features, timeline and budget…" required></textarea>
       </label>
 
       <button class="btn" type="submit">Send message</button>
     </form>
 
-    <!-- Brze ikone: mail i LinkedIn -->
-    <div class="social-links" style="margin-top:18px;">
-      <a href="mailto:tsolutionsdev@outlook.com" aria-label="Email">
-        <i class='bx bx-envelope'></i>
-      </a>
-      <a href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <i class='bx bxl-linkedin'></i>
-      </a>
+    <div class="social-links">
+      <a href="mailto:tsolutionsdev@outlook.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+      <a href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <p>© <span id="y"></span> T•Solutions. All rights reserved.</p>
   </footer>
