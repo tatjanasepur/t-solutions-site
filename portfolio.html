@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — T•Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="img/ts-badge-gradient.png" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="img/ts-badge-gradient.png" alt="T•Solutions" width="40" height="40" />
+      <span>T•Solutions</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a class="btn ghost" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Selected Projects</h1>
+      <p>A curated set of apps, websites, games & AI features we’ve built.</p>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <main class="container page">
+    <div class="cards">
+      <article class="card service reveal-in">
+        <h3>FitTrack Pro</h3>
+        <p>Subscription fitness platform with chat, meal plans & progress tracking.</p>
+        <p style="opacity:.75;margin-top:6px"><small>Angular • Node.js • PostgreSQL</small></p>
+      </article>
+      <article class="card service reveal-in">
+        <h3>SmartBudget AI</h3>
+        <p>Personal finance with AI insights, anomaly detection & forecasting.</p>
+        <p style="opacity:.75;margin-top:6px"><small>ASP.NET Core • Python (FastAPI) • PostgreSQL</small></p>
+      </article>
+      <article class="card service reveal-in">
+        <h3>EduQuest 3D</h3>
+        <p>Interactive learning game deployed for web & mobile.</p>
+        <p style="opacity:.75;margin-top:6px"><small>Unity • WebGL</small></p>
+      </article>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="btn" href="index.html#contact">Start a project</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> T•Solutions. All rights reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
