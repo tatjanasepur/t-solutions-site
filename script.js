@@ -1,29 +1,41 @@
-// Year in footer
-const y = document.getElementById('y');
-if (y) y.textContent = new Date().getFullYear();
-
-// Scroll reveal
-const reveal = document.querySelectorAll('.reveal');
-if (reveal.length) {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.15 });
-  reveal.forEach(el => io.observe(el));
-}
-
-// Blaga parallax reakcija na miša za badge
+// Parallax za bedž (malko prati miša)
 const badge = document.querySelector('.badge-float');
 if (badge) {
-  const parent = badge.parentElement;
-  parent.addEventListener('mousemove', (e) => {
-    const rect = parent.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    badge.style.transform = `translate(${x*10}px, ${-6 + y*-6}px)`;
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 8;
+    const y = (e.clientY / window.innerHeight - 0.5) * 8;
+    badge.style.transform = `translate(${x}px, ${y}px)`;
   });
-  parent.addEventListener('mouseleave', () => {
-    badge.style.transform = 'translate(0, 0)';
+}
+
+// Scroll-reveal animacije
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(ent => {
+    if (ent.isIntersecting) {
+      ent.target.classList.add('revealed');
+      io.unobserve(ent.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal-up').forEach(el => io.observe(el));
+
+// Contact forma – otvori mailtto sa pre-popunjenim subject/body
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const name = data.get('name');
+    const email = data.get('email');
+    const project = data.get('project') || 'General';
+    const message = data.get('message') || '';
+
+    const subject = encodeURIComponent(`New inquiry — ${project}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nProject: ${project}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:tsolutionsdev@outlook.com?subject=${subject}&body=${body}`;
   });
 }
