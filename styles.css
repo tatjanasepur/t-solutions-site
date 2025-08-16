@@ -52,7 +52,9 @@ p{margin:0}
 
 /* ====== HERO ====== */
 .hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px;padding:56px 0}
-.logo-hero{width:min(640px,100%);height:auto;display:block}
+.logo-hero{
+  width:min(640px,100%);height:auto;display:block;
+}
 .hero-sub{color:var(--muted);max-width:60ch;margin-top:8px}
 .cta{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
 
