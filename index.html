@@ -4,19 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>T•Solutions — Full-Stack Web, .NET, Games & AI</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- NAV -->
+  <!-- SHARED HEADER (isti na svim stranicama) -->
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="container nav-row">
       <a class="brand" href="index.html">
         <span class="brand-mark">TS</span>
-        <span class="brand-text">T•Solutions</span>
+        <span class="brand-name">T•Solutions</span>
       </a>
-      <nav class="nav">
-        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+      <nav class="main-nav">
+        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="about.html">About</a>
         <a class="nav-link" href="portfolio.html">Portfolio</a>
         <a class="nav-cta" href="#contact">Contact</a>
@@ -24,123 +25,67 @@
     </div>
   </header>
 
-  <!-- HERO / BANNER -->
+  <!-- HERO -->
   <section class="hero">
-    <!-- background banner (crop/cover) -->
-    <div class="hero-bg"></div>
-
+    <!-- Veliki tekstualni “banner” (bez tamne pozadine, čist tekst) -->
     <div class="container hero-grid">
-      <div class="hero-left">
-        <!-- veliki brend tekst iznad naslova (bez pozadine slike) -->
-        <h1 class="brand-display reveal">T•Solutions</h1>
-
-        <h2 class="hero-title reveal">
-          We build fast, elegant digital products.
-        </h2>
-        <p class="hero-sub reveal">
-          Websites & web apps • .NET services • Games • AI-powered features — crafted with UX/UI excellence.
-        </p>
-        <div class="hero-actions reveal">
+      <div class="hero-copy">
+        <h1 class="hero-logo">T-Solutions</h1>
+        <p class="hero-sub">Websites & web apps • .NET services • Games • AI-powered features — crafted with UX/UI excellence.</p>
+        <div class="hero-actions">
           <a class="btn primary" href="#services">Explore services</a>
-          <a class="btn ghost" href="about.html">About us</a>
+          <a class="btn light" href="about.html">About us</a>
         </div>
       </div>
 
-      <!-- desni „TS“ bedž koji prati miš -->
-      <div class="hero-right">
-        <img
-          src="img/ts-badge-deep.png.jpeg"
-          alt="TS badge"
-          class="badge parallax"
-          width="320"
-          height="320"
-        />
-        <div class="badge-glow"></div>
+      <!-- TS bedž – čist CSS, zlatni prsten, glow, bez crne pozadine -->
+      <div class="hero-badge-wrapper">
+        <div class="ts-badge" aria-label="TS badge"><span>TS</span></div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT DO YOU NEED -->
-  <section id="services" class="section">
+  <!-- SERVICES -->
+  <section class="section" id="services">
     <div class="container">
-      <h3 class="section-title reveal">What do you need?</h3>
+      <h2 class="section-title">What do you need?</h2>
 
-      <div class="cards">
-        <a class="card reveal" href="#contact">
-          <h4>Web Development</h4>
+      <div class="card-grid">
+        <article class="card reveal">
+          <h3>Web Development</h3>
           <p>Responsive, SEO-ready websites and web apps.</p>
-        </a>
+        </article>
 
-        <a class="card reveal" href="#contact">
-          <h4>App Development</h4>
+        <article class="card reveal">
+          <h3>App Development</h3>
           <p>Custom apps with clean UX and robust back-ends.</p>
-        </a>
+        </article>
 
-        <a class="card reveal" href="#contact">
-          <h4>Games & AI</h4>
-          <p>Interactive 3D, Unity / Three.js, and AI automation.</p>
-        </a>
+        <article class="card reveal">
+          <h3>Games & AI</h3>
+          <p>Interactive 3D (Unity/Three.js) and AI automation.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT (anchor) -->
-  <section id="contact" class="section">
+  <!-- CONTACT (anchor za CTA) -->
+  <section class="section" id="contact">
     <div class="container">
-      <h3 class="section-title reveal">Contact</h3>
-
-      <form class="contact-grid reveal" name="contact-main"
-            action="https://formsubmit.co/tsolutionsdev@outlook.com"
-            method="POST">
-        <!-- honeypot -->
-        <input type="text" name="_honey" style="display:none" />
-        <input type="hidden" name="_next" value="thank-you.html" />
-        <input type="hidden" name="_subject" value="New Inquiry from T•Solutions" />
-
-        <label>
-          Full name
-          <input type="text" name="name" placeholder="Your Name" required/>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com" required/>
-        </label>
-
-        <label class="full">
-          Project type
-          <select name="project" required>
-            <option value="">Choose…</option>
-            <option>Website / Web app</option>
-            <option>Custom App</option>
-            <option>Game / 3D / Interactive</option>
-            <option>AI / Automation</option>
-          </select>
-        </label>
-
-        <label class="full">
-          Message
-          <textarea name="message" rows="5"
-            placeholder="Briefly describe your idea, features, timeline and budget…"
-            required></textarea>
-        </label>
-
-        <div class="actions">
-          <button class="btn primary" type="submit">Send message</button>
-          <a class="icon-link" href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <span class="lnk">in</span>
-          </a>
-          <a class="icon-link" href="mailto:tsolutionsdev@outlook.com" aria-label="Email">
-            <span class="lnk">@</span>
-          </a>
-        </div>
-      </form>
+      <h2 class="section-title">Start a project</h2>
+      <p class="lead">Tell us what you need and we’ll propose the fastest, cleanest solution.</p>
+      <a class="btn primary" href="mailto:tsolutionsdev@outlook.com">tsolutionsdev@outlook.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 T•Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
