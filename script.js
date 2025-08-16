@@ -1,41 +1,22 @@
-// Parallax za bedž (malko prati miša)
-const badge = document.querySelector('.badge-float');
-if (badge) {
-  window.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 8;
-    const y = (e.clientY / window.innerHeight - 0.5) * 8;
-    badge.style.transform = `translate(${x}px, ${y}px)`;
-  });
-}
-
-// Scroll-reveal animacije
+/* Scroll reveal */
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(ent => {
-    if (ent.isIntersecting) {
-      ent.target.classList.add('revealed');
-      io.unobserve(ent.target);
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.08 });
 
-document.querySelectorAll('.reveal-up').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Contact forma – otvori mailtto sa pre-popunjenim subject/body
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const name = data.get('name');
-    const email = data.get('email');
-    const project = data.get('project') || 'General';
-    const message = data.get('message') || '';
-
-    const subject = encodeURIComponent(`New inquiry — ${project}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nProject: ${project}\n\nMessage:\n${message}`
-    );
-
-    window.location.href = `mailto:tsolutionsdev@outlook.com?subject=${subject}&body=${body}`;
+/* Simple parallax for the badge */
+const badge = document.querySelector('.parallax');
+if (badge) {
+  window.addEventListener('mousemove', (e) => {
+    const { innerWidth: w, innerHeight: h } = window;
+    const x = (e.clientX - w/2) / w;   // -0.5 .. 0.5
+    const y = (e.clientY - h/2) / h;
+    badge.style.transform = `translate(${x * 14}px, ${y * 14}px)`;
   });
 }

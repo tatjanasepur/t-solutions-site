@@ -2,51 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — T•Solutions</title>
-  <meta name="description" content="We design and build full-stack web applications, .NET services, interactive experiences, and AI-powered tools tailored to your business needs." />
-  <link rel="icon" type="image/png" href="/img/ts-badge-gradient.png?v=3" />
-  <link rel="stylesheet" href="/styles.css?v=3" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- NAV (isti kao na index) -->
   <header class="site-header">
-    <a class="brand" href="/index.html">
-      <img src="/img/ts-badge-gradient.png?v=3" alt="T•Solutions" />
-      <span>T•Solutions</span>
-    </a>
-    <nav class="main-nav">
-      <a href="/index.html">Home</a>
-      <a class="active" href="/about.html">About</a>
-      <a href="/portfolio.html">Portfolio</a>
-      <a class="btn btn-ghost" href="/index.html#contact">Contact</a>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TS</span>
+        <span class="brand-text">T•Solutions</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container page-hero-inner">
-      <div>
-        <h1>About Us</h1>
-        <p>We are T•Solutions – your partner for high-quality, reliable, and scalable digital products.</p>
-      </div>
-      <img class="badge-float small" src="/img/ts-badge-deep.png?v=3" alt="TS badge" />
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="container about-hero-inner">
+      <h1 class="brand-display reveal">T•Solutions</h1>
+      <p class="lead reveal">
+        We are T•Solutions — your partner for high-quality, reliable, and scalable digital products.
+      </p>
     </div>
   </section>
 
-  <!-- CONTENT -->
-  <main class="container page">
-    <div class="grid-2 gap-lg">
-      <section class="panel reveal">
+  <!-- ABOUT BODY -->
+  <main class="section">
+    <div class="container about-grid">
+      <!-- left column -->
+      <section class="about-block reveal">
         <h2>Who We Are</h2>
-        <p>We design and build full-stack web applications, .NET services, interactive experiences, and AI-powered tools tailored to your business needs.</p>
-      </section>
+        <p>
+          We design and build full-stack web applications, .NET services, interactive
+          experiences, and AI-powered tools tailored to your business needs.
+        </p>
 
-      <section class="panel reveal">
-        <h2>What We Do</h2>
-        <ul class="bullet">
+        <h3>What We Do</h3>
+        <ul class="bullets">
           <li>Modern front-end with Angular + TypeScript</li>
           <li>Back-end with ASP.NET Core (C#) or Node.js</li>
           <li>Databases & caching (PostgreSQL, Redis)</li>
@@ -56,36 +56,49 @@
         </ul>
       </section>
 
-      <section class="panel reveal">
-        <h2>Services</h2>
-        <div class="mini-cards">
-          <div class="mini card-pink"><i class='bx bx-code-alt'></i> Full-Stack Web Development</div>
-          <div class="mini card-mint"><i class='bx bxl-microsoft'></i> .NET Applications</div>
-          <div class="mini card-gold"><i class='bx bx-joystick'></i> Game & Interactive Development</div>
-          <div class="mini card-mint"><i class='bx bx-brain'></i> AI & Automation Solutions</div>
-          <div class="mini card-gold"><i class='bx bx-pencil'></i> UI/UX Design</div>
-          <div class="mini card-pink"><i class='bx bx-chart'></i> SEO & Analytics</div>
+      <!-- right column -->
+      <aside class="about-cards">
+        <div class="mini-card reveal">
+          <h4>Services</h4>
+          <ul>
+            <li>Full-Stack Web Development</li>
+            <li>.NET Applications</li>
+            <li>Game & Interactive Development</li>
+            <li>AI & Automation Solutions</li>
+            <li>UI/UX Design</li>
+            <li>SEO & Analytics</li>
+          </ul>
         </div>
-      </section>
 
-      <section class="panel reveal">
-        <h2>Achievements</h2>
-        <ul class="bullet">
-          <li>Improved client efficiency by up to 40%</li>
-          <li>Delivered on time with high code quality</li>
-          <li>50% faster deployments via streamlined CI/CD</li>
-        </ul>
-        <div class="cta">
-          <a class="btn btn-primary" href="/index.html#contact">Start a project</a>
+        <div class="mini-card reveal">
+          <h4>Selected projects</h4>
+          <ul>
+            <li><b>FitTrack Pro</b> — fitness web app with real-time chat, meal planning, and progress tracking.</li>
+            <li><b>SmartBudget AI</b> — personal finance tool with AI analytics and insights.</li>
+            <li><b>EduQuest 3D</b> — cross-platform educational game deployed on web & mobile.</li>
+          </ul>
         </div>
-      </section>
+
+        <div class="mini-card reveal">
+          <h4>Achievements</h4>
+          <ul>
+            <li>Improved client efficiency by up to 40%</li>
+            <li>Delivered on time with high code quality</li>
+            <li>50% faster deployments via streamlined CI/CD</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="container cta-row reveal">
+      <a class="btn primary" href="index.html#contact">Start a project</a>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="y"></span> T•Solutions. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 T•Solutions. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script src="/script.js?v=3" defer></script>
 </body>
 </html>
