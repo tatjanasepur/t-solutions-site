@@ -2,62 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio — T•Solutions</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="img/ts-badge-gradient.png" />
 </head>
 <body>
-  <!-- NAVBAR -->
+  <!-- ISTI HEADER KAO NA SVIM STRANAMA -->
   <header class="site-header">
-    <a class="brand" href="index.html">
-      <img src="img/ts-badge-gradient.png" alt="T•Solutions" width="40" height="40" />
-      <span>T•Solutions</span>
-    </a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html" class="active">Portfolio</a>
-      <a class="btn ghost" href="index.html#contact">Contact</a>
-    </nav>
+    <div class="container nav-row">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TS</span>
+        <span class="brand-name">T•Solutions</span>
+      </a>
+      <nav class="main-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        <a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="page-hero">
+  <!-- NASLOV + LISTA KARTICA U ISTOM CONTAINERU -->
+  <main class="section">
     <div class="container">
-      <h1>Selected Projects</h1>
-      <p>A curated set of apps, websites, games & AI features we’ve built.</p>
-    </div>
-  </section>
+      <h1 class="section-title">Selected Projects</h1>
+      <p class="lead">A curated set of apps, websites, games & AI features we’ve built.</p>
 
-  <!-- GRID -->
-  <main class="container page">
-    <div class="cards">
-      <article class="card service reveal-in">
-        <h3>FitTrack Pro</h3>
-        <p>Subscription fitness platform with chat, meal plans & progress tracking.</p>
-        <p style="opacity:.75;margin-top:6px"><small>Angular • Node.js • PostgreSQL</small></p>
-      </article>
-      <article class="card service reveal-in">
-        <h3>SmartBudget AI</h3>
-        <p>Personal finance with AI insights, anomaly detection & forecasting.</p>
-        <p style="opacity:.75;margin-top:6px"><small>ASP.NET Core • Python (FastAPI) • PostgreSQL</small></p>
-      </article>
-      <article class="card service reveal-in">
-        <h3>EduQuest 3D</h3>
-        <p>Interactive learning game deployed for web & mobile.</p>
-        <p style="opacity:.75;margin-top:6px"><small>Unity • WebGL</small></p>
-      </article>
-    </div>
+      <div class="card-list">
+        <article class="card reveal">
+          <h3>FitTrack Pro</h3>
+          <p>Subscription fitness platform with chat, meal plans & progress tracking.</p>
+          <p class="tech muted">Angular • Node.js • PostgreSQL</p>
+        </article>
 
-    <div class="cta-wrap">
-      <a class="btn" href="index.html#contact">Start a project</a>
+        <article class="card reveal">
+          <h3>SmartBudget AI</h3>
+          <p>Personal finance with AI insights, anomaly detection & forecasting.</p>
+          <p class="tech muted">ASP.NET Core • Python (FastAPI) • PostgreSQL</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>EduQuest 3D</h3>
+          <p>Interactive learning game deployed for web & mobile.</p>
+          <p class="tech muted">Unity • WebGL</p>
+        </article>
+      </div>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="y"></span> T•Solutions. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 T•Solutions. All rights reserved.</p>
+    </div>
   </footer>
-  <script src="script.js" defer></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
