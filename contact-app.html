@@ -1,28 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact — App Quote | T•Solutions</title>
   <meta name="description" content="Get a quote for a custom web/mobile app.">
-  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7"/>
 </head>
 <body>
-
   <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
-      <a href="index.html" class="brand">
-        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
-        <span class="brand-text">T•Solutions</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact-web.html">Contact</a>
-      </nav>
+      <a href="index.html" class="brand"><img src="img/ts-header.png" class="logo-img" alt="T•Solutions"><span class="brand-text">T•Solutions</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+      <nav class="nav" data-menu><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact-web.html">Contact</a></nav>
     </div>
   </header>
 
@@ -31,15 +24,13 @@
       <h1 class="sec-title fade-up">Need a custom app?</h1>
       <p class="fade-up delay-1">Describe the workflow, platform and core features.</p>
 
-      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-formspree-id" method="POST">
+      <form class="contact fade-up delay-2" action="https://formspree.io/f/mdkdvwjw" method="POST">
         <input type="hidden" name="service" value="App">
+        <input type="hidden" name="_subject" value="New inquiry — T•Solutions">
+        <input type="hidden" name="_redirect" value="https://t-solutions-site.netlify.app/thank-you.html">
         <div class="row">
-          <label>Name
-            <input type="text" name="name" required>
-          </label>
-          <label>Email
-            <input type="email" name="email" required>
-          </label>
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
         </div>
         <label>Describe your app
           <textarea name="message" rows="6" placeholder="Platform (web/mobile), users, roles, features, integrations, timeline, budget…" required></textarea>
@@ -49,11 +40,8 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
-    </div>
-  </footer>
+  <!-- FOOTER -->
+  <footer class="site-footer"><div class="wrap"><small>© <span id="y"></span> T•Solutions. All rights reserved.</small></div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

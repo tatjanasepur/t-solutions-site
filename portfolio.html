@@ -1,28 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Portfolio — T•Solutions</title>
   <meta name="description" content="Selected websites, apps and interactive work by T•Solutions.">
-  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7"/>
 </head>
 <body>
-
   <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
-      <a href="index.html" class="brand">
-        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
-        <span class="brand-text">T•Solutions</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact-web.html">Contact</a>
-      </nav>
+      <a href="index.html" class="brand"><img src="img/ts-header.png" class="logo-img" alt="T•Solutions"><span class="brand-text">T•Solutions</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+      <nav class="nav" data-menu><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact-web.html">Contact</a></nav>
     </div>
   </header>
 
@@ -30,30 +23,15 @@
     <div class="wrap">
       <h1 class="sec-title fade-up">Portfolio</h1>
       <div class="grid">
-        <article class="card fade-up delay-1">
-          <div class="shot"></div>
-          <h3>Restaurant Demo</h3>
-          <p>Menu, reservations, gallery — everything a local business needs.</p>
-        </article>
-        <article class="card fade-up delay-2">
-          <div class="shot"></div>
-          <h3>Mini Shop</h3>
-          <p>Products + cart. Clean design, ready to scale.</p>
-        </article>
-        <article class="card fade-up delay-3">
-          <div class="shot"></div>
-          <h3>Expense Tracker</h3>
-          <p>Track fuel, beauty and nights out — simple and fast.</p>
-        </article>
+        <article class="card fade-up delay-1"><div class="shot"></div><h3>Restaurant Demo</h3><p>Menu, reservations, gallery — everything a local business needs.</p></article>
+        <article class="card fade-up delay-2"><div class="shot"></div><h3>Mini Shop</h3><p>Products + cart. Clean design, ready to scale.</p></article>
+        <article class="card fade-up delay-3"><div class="shot"></div><h3>Expense Tracker</h3><p>Track fuel, beauty and nights out — simple and fast.</p></article>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
-    </div>
-  </footer>
+  <!-- FOOTER -->
+  <footer class="site-footer"><div class="wrap"><small>© <span id="y"></span> T•Solutions. All rights reserved.</small></div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

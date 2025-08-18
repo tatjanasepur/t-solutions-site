@@ -1,35 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>T•Solutions — Full-Stack Web, .NET, Games & AI</title>
-
-  <!-- SEO -->
-  <meta name="description" content="We build fast, beautiful websites and apps. Full-stack web, .NET services, games and AI solutions tailored to your business.">
-  <link rel="canonical" href="https://YOUR-DOMAIN/" />
+  <meta name="description" content="We build fast, beautiful websites and apps. Full-stack web, .NET, games and AI solutions tailored to your business.">
+  <link rel="canonical" href="https://t-solutions-site.netlify.app/"/>
   <meta property="og:title" content="T•Solutions — Web & Software Solutions">
   <meta property="og:description" content="Modern websites, apps, .NET services, games and AI.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://YOUR-DOMAIN/">
-  <meta property="og:image" content="https://YOUR-DOMAIN/img/ts-header.png">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"T•Solutions",
-    "url":"https://YOUR-DOMAIN/",
-    "logo":"https://YOUR-DOMAIN/img/ts-header.png",
-    "sameAs": ["https://www.linkedin.com/","https://www.instagram.com/"]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta property="og:url" content="https://t-solutions-site.netlify.app/">
+  <meta property="og:image" content="https://t-solutions-site.netlify.app/img/ts-header.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=7"/>
 </head>
 <body>
-
   <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
@@ -37,7 +22,10 @@
         <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
         <span class="brand-text">T•Solutions</span>
       </a>
-      <nav class="nav">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+      <nav class="nav" data-menu>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -52,12 +40,8 @@
       <div class="surface">
         <div class="copy">
           <p class="eyebrow fade-up">Full-stack web · .NET · Apps · Games · AI</p>
-          <h1 class="title fade-up delay-1">
-            We build <span class="gradient">modern websites</span> & apps that convert.
-          </h1>
-          <p class="lead fade-up delay-2">
-            Clean UI, fast performance, secure back-ends. From idea to deployment — no templates.
-          </p>
+          <h1 class="title fade-up delay-1">We build <span class="gradient">modern websites</span> & apps that convert.</h1>
+          <p class="lead fade-up delay-2">Clean UI, fast performance, secure back-ends. From idea to deployment — no templates.</p>
 
           <div class="badges fade-up delay-3">
             <span class="badge"><img src="img/ts-badge-deep.png" alt=""> Angular + TypeScript</span>
@@ -70,23 +54,18 @@
             <a class="btn ghost" href="contact-web.html">Get a quote</a>
           </div>
 
-          <!-- Service options -->
           <div class="options fade-up delay-3">
             <a class="option" href="contact-web.html">
-              <h3>Need a responsive website?</h3>
-              <p>Custom design, SEO-ready, blazing fast.</p>
+              <h3>Need a responsive website?</h3><p>Custom design, SEO-ready, blazing fast.</p>
             </a>
             <a class="option" href="contact-app.html">
-              <h3>Need a custom app?</h3>
-              <p>Dashboards, tools, integrations, automation.</p>
+              <h3>Need a custom app?</h3><p>Dashboards, tools, integrations, automation.</p>
             </a>
             <a class="option" href="contact-game.html">
-              <h3>Need an interactive game/experience?</h3>
-              <p>Unity / Three.js — web & mobile.</p>
+              <h3>Need an interactive game/experience?</h3><p>Unity / Three.js — web & mobile.</p>
             </a>
           </div>
 
-          <!-- Skills chips -->
           <div class="chips fade-up delay-3">
             <span class="chip">Full-Stack Development</span>
             <span class="chip">Front-End (Angular/React)</span>
@@ -97,7 +76,6 @@
             <span class="chip">AI (Python/FastAPI)</span>
           </div>
         </div>
-
         <div class="visual">
           <img src="img/hero-background.png" alt="T•Solutions Hero">
         </div>
@@ -110,32 +88,17 @@
     <div class="wrap">
       <h2 class="sec-title fade-up">What you get</h2>
       <div class="grid">
-        <article class="card fade-up delay-1">
-          <div class="shot"></div>
-          <h3>Custom Design</h3>
-          <p>No cookie-cutters. Every product matches your brand & audience.</p>
-        </article>
-        <article class="card fade-up delay-2">
-          <div class="shot"></div>
-          <h3>Speed & SEO</h3>
-          <p>Core Web Vitals, semantic HTML, sitemap & metadata — ready to rank.</p>
-        </article>
-        <article class="card fade-up delay-3">
-          <div class="shot"></div>
-          <h3>End-to-End</h3>
-          <p>Architecture, development, deployment and long-term support.</p>
-        </article>
+        <article class="card fade-up delay-1"><div class="shot"></div><h3>Custom Design</h3><p>No cookie-cutters. Every product matches your brand & audience.</p></article>
+        <article class="card fade-up delay-2"><div class="shot"></div><h3>Speed & SEO</h3><p>Core Web Vitals, semantic HTML, sitemap & metadata — ready to rank.</p></article>
+        <article class="card fade-up delay-3"><div class="shot"></div><h3>End-to-End</h3><p>Architecture, development, deployment and long-term support.</p></article>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
-    </div>
+    <div class="wrap"><small>© <span id="y"></span> T•Solutions. All rights reserved.</small></div>
   </footer>
-
   <script src="script.js" defer></script>
 </body>
 </html>

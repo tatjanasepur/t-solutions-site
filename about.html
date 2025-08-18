@@ -1,28 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>About — T•Solutions</title>
   <meta name="description" content="About T•Solutions — full-stack web, .NET, games & AI.">
-  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7"/>
 </head>
 <body>
-
   <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
-      <a href="index.html" class="brand">
-        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
-        <span class="brand-text">T•Solutions</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact-web.html">Contact</a>
-      </nav>
+      <a href="index.html" class="brand"><img src="img/ts-header.png" class="logo-img" alt="T•Solutions"><span class="brand-text">T•Solutions</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+      <nav class="nav" data-menu><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact-web.html">Contact</a></nav>
     </div>
   </header>
 
@@ -30,7 +23,7 @@
     <div class="wrap">
       <h1 class="sec-title fade-up">We are T•Solutions</h1>
       <p class="lead fade-up delay-1">
-        Your partner for high-quality, reliable, and scalable digital products. We design and build full-stack web apps,
+        Your partner for high-quality, reliable, and scalable digital products. We design and build full-stack web applications,
         .NET services, interactive experiences, and AI-powered tools tailored to your business needs.
       </p>
 
@@ -39,7 +32,7 @@
           <h3>Our Stack & Approach</h3>
           <ul class="bullets">
             <li>Modern front-end with <strong>Angular + TypeScript</strong></li>
-            <li>Solid back-end with <strong>ASP.NET Core (C#)</strong> or <strong>Node.js</strong></li>
+            <li>Back-end: <strong>ASP.NET Core (C#)</strong> or <strong>Node.js</strong></li>
             <li>Databases & caching: <strong>PostgreSQL, MySQL, Redis</strong></li>
             <li>Cloud & containerization: <strong>Docker, CI/CD</strong></li>
             <li>Interactive experiences: <strong>Unity / Three.js</strong></li>
@@ -48,40 +41,37 @@
         </div>
         <div class="fade-up delay-3">
           <h3>Founder & Lead Developer</h3>
-          <p>
-            I oversee all stages of the project lifecycle — from concept and architecture to deployment and maintenance.
-            Building responsive UIs (Angular/React), robust back-ends (.NET/Node), database design, API development,
-            Unity/Three.js experiences, AI automation (Python), and DevOps pipelines (Docker, CI/CD).
-          </p>
+          <p>I oversee all stages — concept, architecture, development, deployment & maintenance. Responsive UIs (Angular/React), robust back-ends (.NET/Node), database design, API dev, Unity/Three.js, AI automation (Python) and DevOps (Docker, CI/CD).</p>
         </div>
       </div>
 
       <h3 class="sec-title fade-up" style="margin-top:30px;">Selected Projects</h3>
       <div class="grid">
-        <article class="card fade-up delay-1">
-          <div class="shot"></div>
-          <h3>FitTrack Pro</h3>
-          <p>Subscription fitness web app with chat, meal planning & progress tracking (Angular, Node.js, PostgreSQL).</p>
-        </article>
-        <article class="card fade-up delay-2">
-          <div class="shot"></div>
-          <h3>SmartBudget AI</h3>
-          <p>Personal finance tracking with AI-powered analytics (ASP.NET Core, Python, FastAPI, PostgreSQL).</p>
-        </article>
-        <article class="card fade-up delay-3">
-          <div class="shot"></div>
-          <h3>EduQuest 3D</h3>
-          <p>Cross-platform educational game for interactive learning (Unity, deployed to web & mobile).</p>
-        </article>
+        <article class="card fade-up delay-1"><div class="shot"></div><h3>FitTrack Pro</h3><p>Fitness web app with chat, meal planning & progress tracking (Angular, Node.js, PostgreSQL).</p></article>
+        <article class="card fade-up delay-2"><div class="shot"></div><h3>SmartBudget AI</h3><p>Personal finance with AI analytics (ASP.NET Core, Python, FastAPI, PostgreSQL).</p></article>
+        <article class="card fade-up delay-3"><div class="shot"></div><h3>EduQuest 3D</h3><p>Educational game (Unity) deployed to web & mobile.</p></article>
+      </div>
+
+      <h3 class="sec-title fade-up" id="reach" style="margin-top:30px;">Reach us</h3>
+      <div class="contact-cards fade-up delay-1">
+        <a class="contact-card" href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noreferrer">
+          <span class="icon"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.48V23h-4V8z"/></svg></span>
+          <div><strong>LinkedIn</strong><br><span>t-solutions</span></div>
+        </a>
+        <a class="contact-card" href="mailto:tsolutionsdev@outlook.com?subject=Project%20inquiry%20from%20T•Solutions&body=Hi!%20I’d%20like%20to%20chat%20about…">
+          <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg></span>
+          <div><strong>Email</strong><br><span>tsolutionsdev@outlook.com</span></div>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/t_solutions.dev/" target="_blank" rel="noreferrer">
+          <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6.5-8.9a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM24 7.3v9.4A7.3 7.3 0 0 1 16.7 24H7.3A7.3 7.3 0 0 1 0 16.7V7.3A7.3 7.3 0 0 1 7.3 0h9.4A7.3 7.3 0 0 1 24 7.3Z"/></svg></span>
+          <div><strong>Instagram</strong><br><span>@t_solutions.dev</span></div>
+        </a>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
-    </div>
-  </footer>
+  <!-- FOOTER -->
+  <footer class="site-footer"><div class="wrap"><small>© <span id="y"></span> T•Solutions. All rights reserved.</small></div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>
