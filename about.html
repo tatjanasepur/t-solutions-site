@@ -4,15 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — T•Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="About T•Solutions — full-stack web, .NET, games & AI.">
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- header -->
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="brand">
-        <span class="logo-square"><span class="ts">TS</span></span>
+        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
         <span class="brand-text">T•Solutions</span>
       </a>
       <nav class="nav">
@@ -24,19 +26,53 @@
     </div>
   </header>
 
-  <section id="about" class="section">
+  <section class="section">
     <div class="wrap">
-      <h1 class="sec-title fade-up">About</h1>
+      <h1 class="sec-title fade-up">We are T•Solutions</h1>
+      <p class="lead fade-up delay-1">
+        Your partner for high-quality, reliable, and scalable digital products. We design and build full-stack web apps,
+        .NET services, interactive experiences, and AI-powered tools tailored to your business needs.
+      </p>
+
       <div class="about-grid">
-        <p class="fade-up delay-1">
-          I’m Tatjana — founder of <strong>T•Solutions</strong>. I help small businesses go online
-          with clean, fast, beautiful websites and mini-apps. I also prototype .NET backends and simple games.
-        </p>
-        <ul class="bullets fade-up delay-2">
-          <li>Custom design (no generic themes)</li>
-          <li>SEO basics + blazing performance</li>
-          <li>Simple maintenance & support</li>
-        </ul>
+        <div class="fade-up delay-2">
+          <h3>Our Stack & Approach</h3>
+          <ul class="bullets">
+            <li>Modern front-end with <strong>Angular + TypeScript</strong></li>
+            <li>Solid back-end with <strong>ASP.NET Core (C#)</strong> or <strong>Node.js</strong></li>
+            <li>Databases & caching: <strong>PostgreSQL, MySQL, Redis</strong></li>
+            <li>Cloud & containerization: <strong>Docker, CI/CD</strong></li>
+            <li>Interactive experiences: <strong>Unity / Three.js</strong></li>
+            <li>AI features: <strong>Python (FastAPI)</strong></li>
+          </ul>
+        </div>
+        <div class="fade-up delay-3">
+          <h3>Founder & Lead Developer</h3>
+          <p>
+            I oversee all stages of the project lifecycle — from concept and architecture to deployment and maintenance.
+            Building responsive UIs (Angular/React), robust back-ends (.NET/Node), database design, API development,
+            Unity/Three.js experiences, AI automation (Python), and DevOps pipelines (Docker, CI/CD).
+          </p>
+        </div>
+      </div>
+
+      <h3 class="sec-title fade-up" style="margin-top:30px;">Selected Projects</h3>
+      <div class="grid">
+        <article class="card fade-up delay-1">
+          <div class="shot"></div>
+          <h3>FitTrack Pro</h3>
+          <p>Subscription fitness web app with chat, meal planning & progress tracking (Angular, Node.js, PostgreSQL).</p>
+        </article>
+        <article class="card fade-up delay-2">
+          <div class="shot"></div>
+          <h3>SmartBudget AI</h3>
+          <p>Personal finance tracking with AI-powered analytics (ASP.NET Core, Python, FastAPI, PostgreSQL).</p>
+        </article>
+        <article class="card fade-up delay-3">
+          <div class="shot"></div>
+          <h3>EduQuest 3D</h3>
+          <p>Cross-platform educational game for interactive learning (Unity, deployed to web & mobile).</p>
+        </article>
       </div>
     </div>
   </section>

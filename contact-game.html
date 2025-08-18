@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Games | T•Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Contact — Game/Interactive | T•Solutions</title>
+  <meta name="description" content="Prototype an interactive game or experience with Unity / Three.js.">
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="brand">
-        <span class="logo-square"><span class="ts">TS</span></span>
+        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
         <span class="brand-text">T•Solutions</span>
       </a>
       <nav class="nav">
@@ -23,12 +26,13 @@
     </div>
   </header>
 
-  <section id="contact" class="section">
+  <section class="section">
     <div class="wrap">
-      <h1 class="sec-title fade-up">Prototype a mini-game</h1>
-      <p class="fade-up delay-1">Tell me genre, platform and mechanics.</p>
+      <h1 class="sec-title fade-up">Need an interactive game/experience?</h1>
+      <p class="fade-up delay-1">Tell us genre, platform, mechanics and art style.</p>
 
-      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-id-here" method="POST">
+      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-formspree-id" method="POST">
+        <input type="hidden" name="service" value="Game/Interactive">
         <div class="row">
           <label>Name
             <input type="text" name="name" required>
@@ -37,8 +41,8 @@
             <input type="email" name="email" required>
           </label>
         </div>
-        <label>Game idea
-          <textarea name="message" rows="5" placeholder="Platformer, runner, puzzle… scope & art style" required></textarea>
+        <label>Your idea
+          <textarea name="message" rows="6" placeholder="Platformer/runner/puzzle, web/mobile, mechanics, references, timeline, budget…" required></textarea>
         </label>
         <button class="btn primary" type="submit">Send</button>
       </form>

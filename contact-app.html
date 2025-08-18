@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Apps | T•Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Contact — App Quote | T•Solutions</title>
+  <meta name="description" content="Get a quote for a custom web/mobile app.">
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- header -->
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="brand">
-        <span class="logo-square"><span class="ts">TS</span></span>
+        <img src="img/ts-header.png" class="logo-img" alt="T•Solutions">
         <span class="brand-text">T•Solutions</span>
       </a>
       <nav class="nav">
@@ -24,12 +26,13 @@
     </div>
   </header>
 
-  <section id="contact" class="section">
+  <section class="section">
     <div class="wrap">
-      <h1 class="sec-title fade-up">Build a small app</h1>
-      <p class="fade-up delay-1">Describe the workflow and platform (web/mobile).</p>
+      <h1 class="sec-title fade-up">Need a custom app?</h1>
+      <p class="fade-up delay-1">Describe the workflow, platform and core features.</p>
 
-      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-id-here" method="POST">
+      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-formspree-id" method="POST">
+        <input type="hidden" name="service" value="App">
         <div class="row">
           <label>Name
             <input type="text" name="name" required>
@@ -38,8 +41,8 @@
             <input type="email" name="email" required>
           </label>
         </div>
-        <label>App details
-          <textarea name="message" rows="5" placeholder="Use cases, features, users, timeline…" required></textarea>
+        <label>Describe your app
+          <textarea name="message" rows="6" placeholder="Platform (web/mobile), users, roles, features, integrations, timeline, budget…" required></textarea>
         </label>
         <button class="btn primary" type="submit">Send</button>
       </form>
