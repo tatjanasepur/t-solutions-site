@@ -1,91 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="sr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>T•Solutions — Full-Stack Web, .NET, Games & AI</title>
+  <title>T•Solutions — Portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- SHARED HEADER (isti na svim stranicama) -->
+  <!-- Sticky top-nav (ne skače, ima offset za anchor-e) -->
   <header class="site-header">
-    <div class="container nav-row">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">TS</span>
-        <span class="brand-name">T•Solutions</span>
+    <div class="wrap">
+      <a href="#home" class="brand">
+        <!-- Animirani TS kružić: bez pozadinske ploče, samo kružnica+TS -->
+        <span class="ts-badge" aria-hidden="true">
+          <span class="ts-text">TS</span>
+        </span>
+        <span class="brand-text">T•Solutions</span>
       </a>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <!-- Veliki tekstualni “banner” (bez tamne pozadine, čist tekst) -->
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1 class="hero-logo">T-Solutions</h1>
-        <p class="hero-sub">Websites & web apps • .NET services • Games • AI-powered features — crafted with UX/UI excellence.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#services">Explore services</a>
-          <a class="btn light" href="about.html">About us</a>
+  <main id="home" class="section hero">
+    <div class="wrap">
+      <h1 class="title">Pravim <span class="accent">moderne sajtove</span> i mini aplikacije za male biznise.</h1>
+      <p class="lead">Minimal dizajn, brze performanse, čisto iskustvo. Sve po meri — bez šablona.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#portfolio">Pogledaj radove</a>
+        <a class="btn ghost" href="#contact">Zatraži ponudu</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2>Ko sam ja</h2>
+      <p>
+        Ja sam Tatjana iz <strong>T•Solutions</strong> — web developer fokusiran na čiste, brze i lepe sajtove.
+        Radim landing stranice, portfolio sajtove i male web aplikacije (npr. expense tracker).
+      </p>
+      <ul class="bullets">
+        <li>Custom dizajn (bez gotovih šablona)</li>
+        <li>SEO osnove + brza učitavanja</li>
+        <li>Jednostavno održavanje i podrška</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section alt">
+    <div class="wrap">
+      <h2>Portfolio</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="shot" aria-hidden="true"></div>
+          <h3>Restoran Demo</h3>
+          <p>Meni, rezervacije, galerija — sve što treba lokalnom biznisu.</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (uskoro)</a>
+        </article>
+
+        <article class="card">
+          <div class="shot" aria-hidden="true"></div>
+          <h3>Mini Shop</h3>
+          <p>Korpa + pregled proizvoda. Čist dizajn, spreman za rast.</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (uskoro)</a>
+        </article>
+
+        <article class="card">
+          <div class="shot" aria-hidden="true"></div>
+          <h3>Expense Tracker</h3>
+          <p>Mala aplikacija za praćenje troškova (gorivo, kozmetika, izlasci).</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (uskoro)</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>Kontakt</h2>
+      <p>Piši mi za brzu ponudu ili saradnju.</p>
+
+      <form class="contact" action="https://formspree.io/f/mayvluex" method="POST">
+        <div class="row">
+          <label>Ime
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
         </div>
-      </div>
+        <label>Poruka
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Pošalji</button>
+      </form>
 
-      <!-- TS bedž – čist CSS, zlatni prsten, glow, bez crne pozadine -->
-      <div class="hero-badge-wrapper">
-        <div class="ts-badge" aria-label="TS badge"><span>TS</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <div class="container">
-      <h2 class="section-title">What do you need?</h2>
-
-      <div class="card-grid">
-        <article class="card reveal">
-          <h3>Web Development</h3>
-          <p>Responsive, SEO-ready websites and web apps.</p>
-        </article>
-
-        <article class="card reveal">
-          <h3>App Development</h3>
-          <p>Custom apps with clean UX and robust back-ends.</p>
-        </article>
-
-        <article class="card reveal">
-          <h3>Games & AI</h3>
-          <p>Interactive 3D (Unity/Three.js) and AI automation.</p>
-        </article>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <span>•</span>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>•</span>
+        <a href="mailto:hello@tsolutions.dev">hello@tsolutions.dev</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT (anchor za CTA) -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Start a project</h2>
-      <p class="lead">Tell us what you need and we’ll propose the fastest, cleanest solution.</p>
-      <a class="btn primary" href="mailto:tsolutionsdev@outlook.com">tsolutionsdev@outlook.com</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 T•Solutions. All rights reserved.</p>
+    <div class="wrap">
+      <small>© <span id="y"></span> T•Solutions. Sva prava zadržana.</small>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // godina u footeru
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
