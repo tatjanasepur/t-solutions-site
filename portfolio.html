@@ -4,61 +4,59 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio — T•Solutions</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ISTI HEADER KAO NA SVIM STRANAMA -->
   <header class="site-header">
-    <div class="container nav-row">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">TS</span>
-        <span class="brand-name">T•Solutions</span>
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="logo-square"><span class="ts">TS</span></span>
+        <span class="brand-text">T•Solutions</span>
       </a>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link active" href="portfolio.html">Portfolio</a>
-        <a class="nav-cta" href="index.html#contact">Contact</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact-web.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- NASLOV + LISTA KARTICA U ISTOM CONTAINERU -->
-  <main class="section">
-    <div class="container">
-      <h1 class="section-title">Selected Projects</h1>
-      <p class="lead">A curated set of apps, websites, games & AI features we’ve built.</p>
+  <section id="portfolio" class="section alt">
+    <div class="wrap">
+      <h1 class="sec-title fade-up">Portfolio</h1>
 
-      <div class="card-list">
-        <article class="card reveal">
-          <h3>FitTrack Pro</h3>
-          <p>Subscription fitness platform with chat, meal plans & progress tracking.</p>
-          <p class="tech muted">Angular • Node.js • PostgreSQL</p>
+      <div class="grid">
+        <article class="card fade-up delay-1">
+          <div class="shot"></div>
+          <h3>Restaurant Demo</h3>
+          <p>Menu, reservations, gallery — everything a local business needs.</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
 
-        <article class="card reveal">
-          <h3>SmartBudget AI</h3>
-          <p>Personal finance with AI insights, anomaly detection & forecasting.</p>
-          <p class="tech muted">ASP.NET Core • Python (FastAPI) • PostgreSQL</p>
+        <article class="card fade-up delay-2">
+          <div class="shot shop"></div>
+          <h3>Mini Shop</h3>
+          <p>Products + cart. Clean design, ready to scale.</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
 
-        <article class="card reveal">
-          <h3>EduQuest 3D</h3>
-          <p>Interactive learning game deployed for web & mobile.</p>
-          <p class="tech muted">Unity • WebGL</p>
+        <article class="card fade-up delay-3">
+          <div class="shot app"></div>
+          <h3>Expense Tracker</h3>
+          <p>Track fuel, beauty and nights out — simple and fast.</p>
+          <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
       </div>
     </div>
-  </main>
+  </section>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 T•Solutions. All rights reserved.</p>
+    <div class="wrap">
+      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -3,24 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>T•Solutions — Portfolio</title>
+  <title>T•Solutions — Web & Apps</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Sticky header (no layout shift, anchors have offset) -->
+  <!-- Glassy sticky header -->
   <header class="site-header">
     <div class="wrap">
       <a href="#home" class="brand">
-        <!-- If you want an image logo, replace the span below with:
-             <img src="logo.png" alt="T•Solutions Logo" class="logo-img"> -->
-        <span class="ts-badge" aria-hidden="true">
-          <span class="ts-text">TS</span>
+        <!-- Ako želiš PNG, zameni span za <img src="logo.png" class="logo-img" alt="T•Solutions"> -->
+        <span class="logo-square">
+          <span class="ts">TS</span>
         </span>
         <span class="brand-text">T•Solutions</span>
       </a>
-
       <nav class="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -30,68 +28,83 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <main id="home" class="section hero">
     <div class="wrap">
-      <h1 class="title">I build <span class="accent">modern websites</span> and small apps for businesses.</h1>
-      <p class="lead">Minimal design, fast performance, clean UX. Fully custom — no templates.</p>
-      <div class="cta-row">
+      <p class="eyebrow fade-up">Full-stack web · .NET · Apps · Games</p>
+      <h1 class="title fade-up delay-1">
+        I build <span class="gradient">modern websites</span> and small apps that convert.
+      </h1>
+      <p class="lead fade-up delay-2">
+        Clean UI, fast performance, zero bloat. Custom design — no templates.
+      </p>
+      <div class="cta-row fade-up delay-3">
         <a class="btn primary" href="#portfolio">See work</a>
         <a class="btn ghost" href="#contact">Get a quote</a>
       </div>
+
+      <!-- floating accents -->
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
     </div>
   </main>
 
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="wrap">
-      <h2>About</h2>
-      <p>
-        I’m Tatjana at <strong>T•Solutions</strong> — a web developer focused on clean, fast, beautiful sites.
-        I deliver landing pages, portfolios, and small web apps (like an expense tracker) tailored to each client.
-      </p>
-      <ul class="bullets">
-        <li>Custom design (no generic themes)</li>
-        <li>SEO basics + fast loading</li>
-        <li>Simple maintenance and support</li>
-      </ul>
+      <h2 class="sec-title fade-up">About</h2>
+      <div class="about-grid">
+        <p class="fade-up delay-1">
+          I’m Tatjana at <strong>T•Solutions</strong> — I design and ship fast, beautiful
+          websites and small web apps (e.g. expense tracker). Everything is tailored to your brand.
+        </p>
+        <ul class="bullets fade-up delay-2">
+          <li>Custom design (no generic themes)</li>
+          <li>SEO basics + blazing performance</li>
+          <li>Simple maintenance and ongoing support</li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="section alt">
     <div class="wrap">
-      <h2>Portfolio</h2>
+      <h2 class="sec-title fade-up">Portfolio</h2>
 
       <div class="grid">
-        <article class="card">
-          <div class="shot" aria-hidden="true"></div>
+        <article class="card tilt fade-up delay-1">
+          <div class="shot"></div>
           <h3>Restaurant Demo</h3>
           <p>Menu, reservations, gallery — everything a local business needs.</p>
           <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
 
-        <article class="card">
-          <div class="shot" aria-hidden="true"></div>
+        <article class="card tilt fade-up delay-2">
+          <div class="shot shop"></div>
           <h3>Mini Shop</h3>
-          <p>Product list + cart. Clean design, ready to scale.</p>
+          <p>Products + cart. Clean design, ready to scale.</p>
           <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
 
-        <article class="card">
-          <div class="shot" aria-hidden="true"></div>
+        <article class="card tilt fade-up delay-3">
+          <div class="shot app"></div>
           <h3>Expense Tracker</h3>
-          <p>Track fuel, beauty, nights out — simple and fast.</p>
+          <p>Track fuel, beauty and nights out — simple and fast.</p>
           <a class="card-link" href="#" aria-disabled="true">Live demo (soon)</a>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="wrap">
-      <h2>Contact</h2>
-      <p>Message me for a quick quote or collaboration.</p>
+      <h2 class="sec-title fade-up">Contact</h2>
+      <p class="fade-up delay-1">Message me for a quick quote or collaboration.</p>
 
-      <!-- Replace action with your Formspree endpoint -->
-      <form class="contact" action="https://formspree.io/f/your-id-here" method="POST">
+      <!-- replace action with your Formspree endpoint -->
+      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-id-here" method="POST">
         <div class="row">
           <label>Name
             <input type="text" name="name" required>
@@ -106,7 +119,7 @@
         <button class="btn primary" type="submit">Send</button>
       </form>
 
-      <div class="socials">
+      <div class="socials fade-up delay-3">
         <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
         <span>•</span>
         <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -122,8 +135,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

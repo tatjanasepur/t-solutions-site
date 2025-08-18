@@ -1,18 +1,26 @@
-// Scroll-reveal: nežno pojavljuje elemente dok skroluješ
+// Year in footer
+document.addEventListener('DOMContentLoaded', () => {
+  const y = document.getElementById('y');
+  if (y) y.textContent = new Date().getFullYear();
+});
+
+// Reveal on scroll
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      e.target.classList.add('visible');
+      e.target.classList.add('revealed');
       io.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.15 });
 
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-// Ako želiš aktivan link u nav-u (po stranici), već stavljamo .active u HTML-u.
-// Ovo ostavljam kao fallback ako budeš router-ovala u budućnosti:
-// const path = location.pathname.split('/').pop() || 'index.html';
-// document.querySelectorAll('.main-nav .nav-link').forEach(a => {
-//   if (a.getAttribute('href') === path) a.classList.add('active');
-// });
+// Active nav highlight (multi-page)
+(function setActiveNav(){
+  const here = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav a').forEach(a=>{
+    const href = a.getAttribute('href');
+    if (href && href.endsWith(here)) a.setAttribute('aria-current','page');
+  });
+})();

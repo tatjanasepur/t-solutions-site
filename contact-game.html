@@ -1,36 +1,55 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Game & AI</title><link rel="stylesheet" href="styles.css"></head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Games | T•Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html"><img src="img/ts-header.png" alt="T-Solutions" width="190" height="40"></a>
-  <nav class="main-nav"><a href="about.html">About</a></nav>
-</header>
-<main class="section">
-  <h1>Game & AI — Project Brief</h1>
-  <form name="contact-game" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact-game">
-    <p class="hidden"><label>Don’t fill this: <input name="bot-field"></label></p>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="logo-square"><span class="ts">TS</span></span>
+        <span class="brand-text">T•Solutions</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact-web.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <label>Your name <input name="name" required></label>
-    <label>Email <input name="email" type="email" required></label>
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h1 class="sec-title fade-up">Prototype a mini-game</h1>
+      <p class="fade-up delay-1">Tell me genre, platform and mechanics.</p>
 
-    <label>What are you looking for?
-      <select name="kind" required>
-        <option value="">Select…</option>
-        <option>Unity game</option>
-        <option>Three.js interactive web</option>
-        <option>AI feature / Automation</option>
-      </select>
-    </label>
+      <form class="contact fade-up delay-2" action="https://formspree.io/f/your-id-here" method="POST">
+        <div class="row">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>Game idea
+          <textarea name="message" rows="5" placeholder="Platformer, runner, puzzle… scope & art style" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-    <label>Concept / references
-      <textarea name="concept" rows="4" placeholder="Brief description, links, mood…"></textarea>
-    </label>
-
-    <button class="btn" type="submit">Send brief</button>
-  </form>
-</main>
-<footer class="site-footer"><p>© <span id="y"></span> T•Solutions.</p></footer>
-<script src="script.js" defer></script>
-</body></html>
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

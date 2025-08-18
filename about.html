@@ -4,89 +4,48 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — T•Solutions</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ISTI HEADER -->
+  <!-- header -->
   <header class="site-header">
-    <div class="container nav-row">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">TS</span>
-        <span class="brand-name">T•Solutions</span>
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="logo-square"><span class="ts">TS</span></span>
+        <span class="brand-text">T•Solutions</span>
       </a>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="about.html">About</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-cta" href="index.html#contact">Contact</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact-web.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO MINI -->
-  <section class="hero-min">
-    <div class="container hero-min-row">
-      <h1 class="page-title reveal">About us</h1>
-      <div class="ts-badge small floating reveal" aria-hidden="true"><span>TS</span></div>
-    </div>
-  </section>
-
-  <!-- ABOUT CONTENT sa reveal animacijama -->
-  <section class="section">
-    <div class="container about-grid">
-      <div class="about-block reveal">
-        <h2>Who We Are</h2>
-        <p>We design and build full-stack web applications, .NET services, interactive experiences, and AI-powered tools tailored to your business needs.</p>
-      </div>
-
-      <div class="about-block reveal">
-        <h2>What We Do</h2>
-        <ul class="bullets">
-          <li>Modern front-end with Angular + TypeScript</li>
-          <li>Back-end with ASP.NET Core (C#) or Node.js</li>
-          <li>Databases & caching (PostgreSQL, Redis)</li>
-          <li>Cloud & containerization (Docker, CI/CD)</li>
-          <li>Interactive experiences with Unity / Three.js</li>
-          <li>AI features with Python (FastAPI)</li>
+  <section id="about" class="section">
+    <div class="wrap">
+      <h1 class="sec-title fade-up">About</h1>
+      <div class="about-grid">
+        <p class="fade-up delay-1">
+          I’m Tatjana — founder of <strong>T•Solutions</strong>. I help small businesses go online
+          with clean, fast, beautiful websites and mini-apps. I also prototype .NET backends and simple games.
+        </p>
+        <ul class="bullets fade-up delay-2">
+          <li>Custom design (no generic themes)</li>
+          <li>SEO basics + blazing performance</li>
+          <li>Simple maintenance & support</li>
         </ul>
-      </div>
-
-      <div class="about-block reveal">
-        <h2>Services</h2>
-        <div class="pill-list">
-          <span class="pill">Full-Stack Web Development</span>
-          <span class="pill">.NET Applications</span>
-          <span class="pill">Game & Interactive Development</span>
-          <span class="pill">AI & Automation Solutions</span>
-          <span class="pill">UI/UX Design</span>
-          <span class="pill">SEO & Analytics</span>
-        </div>
-      </div>
-
-      <div class="about-block reveal">
-        <h2>Results</h2>
-        <ul class="bullets">
-          <li>Improved client efficiency by up to 40%</li>
-          <li>Delivered on time with high code quality</li>
-          <li>50% faster deployments via streamlined CI/CD</li>
-        </ul>
-      </div>
-
-      <div class="about-cta reveal">
-        <a class="btn primary" href="index.html#contact">Start a project</a>
-        <a class="btn ghost" href="portfolio.html">View portfolio</a>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 T•Solutions. All rights reserved.</p>
+    <div class="wrap">
+      <small>© <span id="y"></span> T•Solutions. All rights reserved.</small>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
