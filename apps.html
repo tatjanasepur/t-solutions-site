@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Apps — T•Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="T•Solutions Home"><span class="brand-mark">●</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <details class="dropdown">
+        <summary data-i18n="nav.services">Services</summary>
+        <ul>
+          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps" aria-current="page">Business Apps</a></li>
+        </ul>
+      </details>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1 class="gradient-text" data-i18n="apps.title">Apps that fit your process</h1>
+      <p data-i18n="apps.subtitle">Don’t adapt to tools — let tools adapt to your business.</p>
+    </section>
+
+    <section class="grid-3">
+      <div class="glass pad">
+        <h3 data-i18n="apps.cards.1.title">CRM & Sales</h3>
+        <p data-i18n="apps.cards.1.body">Leads, pipeline, reminders, tasks, and reporting in one place.</p>
+      </div>
+      <div class="glass pad">
+        <h3 data-i18n="apps.cards.2.title">Inventory & Orders</h3>
+        <p data-i18n="apps.cards.2.body">Stock levels, QR/Barcodes, suppliers, and automatic invoices.</p>
+      </div>
+      <div class="glass pad">
+        <h3 data-i18n="apps.cards.3.title">Costs & Time</h3>
+        <p data-i18n="apps.cards.3.body">Expenses, cost centers, time tracking, and leave management.</p>
+      </div>
+    </section>
+
+    <section class="pad">
+      <h2 data-i18n="apps.why.title">Why hire T•Solutions?</h2>
+      <ul class="checklist">
+        <li data-i18n="apps.why.1">We build exactly what you imagine — no bloat.</li>
+        <li data-i18n="apps.why.2">Data you can export any time.</li>
+        <li data-i18n="apps.why.3">Clear docs & training for your team.</li>
+        <li data-i18n="apps.why.4">Scales from 3 to 300 users.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

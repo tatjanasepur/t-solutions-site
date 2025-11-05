@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T•Solutions — Modern Web, QR & Business Apps</title>
+  <meta name="description" content="T•Solutions delivers modern QR menu systems, custom websites, and business apps (CRM, inventory, costs). Built for 2025." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="T•Solutions Home">
+      <span class="brand-mark" aria-hidden>●</span>
+      <span class="sr-only">T•Solutions</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <details class="dropdown">
+        <summary data-i18n="nav.services">Services</summary>
+        <ul>
+          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
+        </ul>
+      </details>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="en" aria-pressed="true">EN</button>
+        <button data-lang="sr" aria-pressed="false">SR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: animirani logo (T • Solutions) sa gradient tekstom koji se “kuca” -->
+    <section class="hero">
+      <h1 id="typewriter" class="gradient-text" data-type="T•Solutions"></h1>
+      <p class="tagline" data-i18n="hero.tagline">
+        Modern solutions that feel tailor-made for your business.
+      </p>
+    </section>
+
+    <!-- Poruka koja ulazi na scroll -->
+    <section class="pitch reveal">
+      <h2 data-i18n="pitch.title">Need a modern solution for your business?</h2>
+      <p data-i18n="pitch.body">You came to the right place. Find out more about our offers below.</p>
+    </section>
+
+    <!-- 3 staklene kartice (iOS 26 glass, mikro tilt na hover) -->
+    <section class="cards">
+      <article class="card glass reveal" data-tilt>
+        <h3 data-i18n="cards.qr.title">QR Menus for Restaurants</h3>
+        <p data-i18n="cards.qr.body">Contactless ordering per table with unique QR codes. Orders go straight to the bar/POS.</p>
+        <a class="btn" href="qr.html" data-i18n="cards.learn">Learn more</a>
+      </article>
+
+      <article class="card glass reveal" data-tilt>
+        <h3 data-i18n="cards.web.title">Custom Websites</h3>
+        <p data-i18n="cards.web.body">From landing pages to full sites: bookings, pricing, offers, and conversions.</p>
+        <a class="btn" href="websites.html" data-i18n="cards.learn">Learn more</a>
+      </article>
+
+      <article class="card glass reveal" data-tilt>
+        <h3 data-i18n="cards.apps.title">Business Apps</h3>
+        <p data-i18n="cards.apps.body">CRM, inventory, expenses, time tracking — built to your process, not the other way around.</p>
+        <a class="btn" href="apps.html" data-i18n="cards.learn">Learn more</a>
+      </article>
+    </section>
+
+    <!-- Kontakt teaser (API hookup kasnije) -->
+    <section id="contact" class="contact reveal">
+      <h2 data-i18n="contact.title">Let’s talk</h2>
+      <p data-i18n="contact.desc">Tell us about your idea. We’ll reply with a plan and timeline.</p>
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          <span data-i18n="contact.email">Your email</span>
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span data-i18n="contact.message">Message</span>
+          <textarea rows="5" placeholder="What do you need?" required></textarea>
+        </label>
+        <button class="btn" data-i18n="contact.send">Send</button>
+        <p class="hint" data-i18n="contact.hint">
+          (API hookup to tsolutionsdev@outlook.com coming next.)
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

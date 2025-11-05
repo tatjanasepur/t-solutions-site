@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Websites — T•Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="T•Solutions Home"><span class="brand-mark">●</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <details class="dropdown">
+        <summary data-i18n="nav.services">Services</summary>
+        <ul>
+          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites" aria-current="page">Websites</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
+        </ul>
+      </details>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1 class="gradient-text" data-i18n="web.title">Custom Websites that Convert</h1>
+      <p data-i18n="web.subtitle">Show up with a beautiful, fast, mobile-first website tailored to your business.</p>
+    </section>
+
+    <section class="grid-2">
+      <div>
+        <h2 data-i18n="web.examples.title">Examples by niche</h2>
+        <ul>
+          <li data-i18n="web.examples.1">Gym: bookings, schedule, trainers, pricing, locations.</li>
+          <li data-i18n="web.examples.2">Boutique: products, inventory, checkout, featured items.</li>
+          <li data-i18n="web.examples.3">Restaurant: menu, specials, delivery/pickup integrations.</li>
+          <li data-i18n="web.examples.4">Services: portfolio, contact, testimonials, lead forms.</li>
+        </ul>
+      </div>
+
+      <div class="glass pad">
+        <h3 data-i18n="web.cta.title">What you get</h3>
+        <ul class="checklist">
+          <li data-i18n="web.cta.1">Design system (colors, type, components)</li>
+          <li data-i18n="web.cta.2">SEO & analytics ready</li>
+          <li data-i18n="web.cta.3">Fast hosting (GitHub Pages/Netlify)</li>
+          <li data-i18n="web.cta.4">Easy editing for you</li>
+        </ul>
+        <a class="btn" href="#contact" data-i18n="web.cta.btn">Get a quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

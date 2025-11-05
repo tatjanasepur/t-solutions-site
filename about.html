@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — T•Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="T•Solutions Home"><span class="brand-mark">●</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <details class="dropdown">
+        <summary data-i18n="nav.services">Services</summary>
+        <ul>
+          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
+        </ul>
+      </details>
+      <a href="about.html" aria-current="page" data-i18n="nav.about">About</a>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1 class="gradient-text" data-i18n="about.title">Why T•Solutions</h1>
+      <p data-i18n="about.subtitle">We avoid templates. We build what fits you and feels like you.</p>
+    </section>
+
+    <section class="grid-2 pad">
+      <div>
+        <h2 data-i18n="about.values.title">Values</h2>
+        <ul class="checklist">
+          <li data-i18n="about.values.1">Unique design — no cookie-cutter.</li>
+          <li data-i18n="about.values.2">Performance & accessibility first.</li>
+          <li data-i18n="about.values.3">Clarity, docs, and handover.</li>
+          <li data-i18n="about.values.4">Iterate with you, not at you.</li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="about.for.title">For whom</h2>
+        <ul>
+          <li data-i18n="about.for.1">Restaurants & cafés → QR menus + POS.</li>
+          <li data-i18n="about.for.2">Businesses that need a site that sells.</li>
+          <li data-i18n="about.for.3">Firms that need internal apps.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

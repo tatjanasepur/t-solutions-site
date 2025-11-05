@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Menus — T•Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="T•Solutions Home"><span class="brand-mark">●</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <details class="dropdown">
+        <summary data-i18n="nav.services">Services</summary>
+        <ul>
+          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
+        </ul>
+      </details>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1 class="gradient-text" data-i18n="qr.title">QR Menus for Tables</h1>
+      <p data-i18n="qr.subtitle">Unique QR per table → scan, order, and the POS gets the order instantly.</p>
+    </section>
+
+    <section class="split">
+      <div>
+        <h2 data-i18n="qr.how.title">How it works</h2>
+        <ol>
+          <li data-i18n="qr.how.1">Each table has a unique QR code with its table number.</li>
+          <li data-i18n="qr.how.2">Guests scan → see menu on their phone → place order.</li>
+          <li data-i18n="qr.how.3">Order appears on the bar/kitchen POS with the correct table.</li>
+          <li data-i18n="qr.how.4">Staff confirms/serves. No waiting, faster turnover.</li>
+        </ol>
+        <h3 data-i18n="qr.why.title">Why it’s great</h3>
+        <ul>
+          <li data-i18n="qr.why.1">Less walking for staff, more attention where it matters.</li>
+          <li data-i18n="qr.why.2">Guests order immediately — no waiting for a waiter.</li>
+          <li data-i18n="qr.why.3">Upsell with photos, combos, and specials.</li>
+          <li data-i18n="qr.why.4">Clean itemized bill by table for easy checkout.</li>
+        </ul>
+      </div>
+
+      <!-- jednostavan vizuelni mock da “vidiš” koncept -->
+      <div class="mock">
+        <div class="table-mock">
+          <div class="table-number">12</div>
+          <div class="qr"></div>
+        </div>
+        <div class="phone-mock">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item wide"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
