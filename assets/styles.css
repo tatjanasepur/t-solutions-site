@@ -3634,4 +3634,28 @@ body {
   background: #ffffff !important;
   color: #020617 !important;
 }
+/* HARD LIGHT MODE ZA PRICING I FAQ KARTICE */
+
+.pricing-card,
+.pricing-card-highlight {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 26px !important;
+  border: 1px solid rgba(148, 163, 184, 0.35) !important;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12) !important;
+}
+
+.pricing-card .pricing-label,
+.pricing-card .pricing-price,
+.pricing-card ul li {
+  color: #0f172a !important;
+}
+
+.faq-card {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 26px !important;
+  border: 1px solid rgba(148, 163, 184, 0.35) !important;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12) !important;
+}
 
