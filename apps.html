@@ -3,62 +3,448 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Business Apps — T•Solutions</title>
+  <title data-i18n="apps.metaTitle">Business Apps — T•Solutions</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">●</span></a>
+    <a class="brand" href="index.html" aria-label="T•Solutions Home">
+      <span class="brand-mark">●</span>
+    </a>
+
     <nav class="nav" aria-label="Primary">
       <a href="index.html" data-i18n="nav.home">Home</a>
+
       <details class="dropdown">
-        <summary class="dropdown-summary"><span data-i18n="nav.services">Services</span><span class="caret" aria-hidden>▾</span></summary>
+        <summary class="dropdown-summary">
+          <span data-i18n="nav.services">Services</span>
+          <span class="caret" aria-hidden>▾</span>
+        </summary>
         <ul>
           <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
           <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
           <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
         </ul>
       </details>
+
       <a href="about.html" data-i18n="nav.about">About</a>
+
       <div class="spacer"></div>
-      <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="sr">SR</button></div>
-      <div class="theme-switch"><button id="themeToggle" aria-label="Toggle theme">🌙</button></div>
+
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+
+      
     </nav>
   </header>
 
   <main>
-    <section class="page-hero">
-      <h1 class="gradient-text" data-i18n="apps.title">Apps that fit your process</h1>
-      <p data-i18n="apps.subtitle">Don’t adapt to tools — let tools adapt to your business.</p>
-    </section>
-
-    <section class="grid-3">
-      <div class="glass pad">
-        <h3 data-i18n="apps.cards.1.title">CRM & Sales</h3>
-        <p data-i18n="apps.cards.1.body">Leads, pipeline, reminders, tasks, and reporting in one place.</p>
-      </div>
-      <div class="glass pad">
-        <h3 data-i18n="apps.cards.2.title">Inventory & Orders</h3>
-        <p data-i18n="apps.cards.2.body">Stock levels, QR/Barcodes, suppliers, and automatic invoices.</p>
-      </div>
-      <div class="glass pad">
-        <h3 data-i18n="apps.cards.3.title">Costs & Time</h3>
-        <p data-i18n="apps.cards.3.body">Expenses, cost centers, time tracking, and leave management.</p>
+    
+    <section class="hero apps-hero">
+      <div class="hero-inner">
+        <h1 class="gradient-text" data-i18n="apps.hero.title">
+          Apps that fit your process
+        </h1>
+        <p class="tagline" data-i18n="apps.hero.lead">
+          Ne prilagođavaš biznis alatima – već alate prilagođavaš svom biznisu.
+          Pravim male, fokusirane aplikacije koje rešavaju konkretne probleme u firmi.
+        </p>
       </div>
     </section>
 
-    <section class="pad">
-      <h2 data-i18n="apps.why.title">Why hire T•Solutions?</h2>
-      <ul class="checklist">
-        <li data-i18n="apps.why.1">We build exactly what you imagine — no bloat.</li>
-        <li data-i18n="apps.why.2">Data you can export any time.</li>
-        <li data-i18n="apps.why.3">Clear docs & training for your team.</li>
-        <li data-i18n="apps.why.4">Scales from 3 to 300 users.</li>
-      </ul>
+    
+    <section class="cards apps-cards">
+      <article class="card glass">
+        <h3 data-i18n="apps.cards.crm.title">CRM &amp; Sales</h3>
+        <p data-i18n="apps.cards.crm.body">
+          Leads, quotes, negotiations and closed deals in one place.
+          Podsetnici, taskovi i osnovni reporting.
+        </p>
+      </article>
+
+      <article class="card glass">
+        <h3 data-i18n="apps.cards.inventory.title">Inventory &amp; Orders</h3>
+        <p data-i18n="apps.cards.inventory.body">
+          Stock levels, QR/barcodes, purchase and sales orders, suppliers,
+          and automatic issue notes.
+        </p>
+      </article>
+
+      <article class="card glass">
+        <h3 data-i18n="apps.cards.costs.title">Costs &amp; Time</h3>
+        <p data-i18n="apps.cards.costs.body">
+          Tvoje interne verzije “All Hours” i “expense trackera” – evidencija vremena,
+          troškova, centara troška i odobravanja.
+        </p>
+      </article>
+    </section>
+
+    
+    <section class="web-section app-demo-section">
+      <div class="web-two-column">
+        <div>
+          <h2 class="web-section-title" data-i18n="apps.mini.title">
+            Mini CRM demo (koncept)
+          </h2>
+          <p class="web-section-lead" data-i18n="apps.mini.lead">
+            Primer kako može da izgleda interni CRM skrojen za tvoj tim – bez viška ekrana
+            i menija koje niko ne koristi. Fokus je na pipeline-u, ključnim kompanijama
+            i konkretnim taskovima.
+          </p>
+          <ul class="web-bullet-list">
+            <li data-i18n="apps.mini.list.1">
+              Pregled prodajnog levka po fazama (Lead, Qualification, Proposal, Won).
+            </li>
+            <li data-i18n="apps.mini.list.2">
+              Lista kompanija sa statusom, odgovornom osobom i sledećim korakom.
+            </li>
+            <li data-i18n="apps.mini.list.3">
+              Taskovi koji se vežu za leadove/kompanije, sa jasnim rokovima.
+            </li>
+            <li data-i18n="apps.mini.list.4">
+              Moguć export u Excel / Google Sheets ili integracija sa postojećim sistemom.
+            </li>
+          </ul>
+          <p class="web-section-lead" data-i18n="apps.mini.note">
+            Ovo je vizuelni prototip – u pravoj aplikaciji bi podaci bili iz tvoje firme
+            i procesa, ne generički template.
+          </p>
+        </div>
+
+        
+        <aside class="app-device glass">
+          <div class="app-device-bezel">
+            <div class="app-device-topbar">
+              <span class="app-device-dot dot-red"></span>
+              <span class="app-device-dot dot-yellow"></span>
+              <span class="app-device-dot dot-green"></span>
+              <span class="app-device-title">T•CRM — Sales Console</span>
+            </div>
+
+            <div class="app-screen">
+              <header class="app-screen-header">
+                <div>
+                  <div class="app-screen-kicker">Pipeline overview</div>
+                  <div class="app-screen-title">Q2 Sales Dashboard</div>
+                </div>
+                <div class="app-screen-meta">
+                  <span>Owner: T•Solutions</span>
+                  <span>Currency: EUR</span>
+                </div>
+              </header>
+
+              <div class="crm-tabs">
+                <button class="crm-tab is-active" data-view="pipeline">Pipeline</button>
+                <button class="crm-tab" data-view="companies">Companies</button>
+                <button class="crm-tab" data-view="tasks">Tasks</button>
+              </div>
+
+              <div class="crm-body">
+                
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    
+    <section class="web-section">
+      <div class="web-section-header">
+        <h2 class="web-section-title center" data-i18n="apps.types.title">
+          Koje aplikacije najčešće pravim za firme
+        </h2>
+        <p class="web-section-lead center" data-i18n="apps.types.lead">
+          U praksi, većina internih aplikacija spada u nekoliko grupa. 
+          Svaka se prilagođava tvojoj firmi – polazimo od procesa koji već postoji,
+          a ne od generičkog šablona.
+        </p>
+      </div>
+
+      <div class="web-feature-grid">
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.crm.title">CRM &amp; prodaja</h3>
+          <p data-i18n="apps.types.crm.body">
+            Leadovi, ponude, tok pregovora, ugovori, istorija komunikacije.
+            Fokus na praktičnim ekranima koje tim stvarno koristi.
+          </p>
+        </article>
+
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.warehouse.title">Magacin &amp; proizvodnja</h3>
+          <p data-i18n="apps.types.warehouse.body">
+            Stanja na lageru, ulazi/izlazi, serijski brojevi, QR kodovi za brži rad u hali ili magacinu.
+          </p>
+        </article>
+
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.costs.title">Troškovi &amp; odobravanja</h3>
+          <p data-i18n="apps.types.costs.body">
+            Zahtevi za nabavku, putni troškovi, centri troška, workflow odobravanja i export za knjigovodstvo.
+          </p>
+        </article>
+
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.time.title">Radno vreme &amp; terenski rad</h3>
+          <p data-i18n="apps.types.time.body">
+            Evidencija prisustva, smene, rad na terenu, statusi zadataka 
+            i lokacije (npr. servisne intervencije).
+          </p>
+        </article>
+
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.hr.title">HR mini sistemi</h3>
+          <p data-i18n="apps.types.hr.body">
+            Onboarding, godišnji odmori, bolovanja, razgovori 1-na-1,
+            jednostavni HR dashboardi.
+          </p>
+        </article>
+
+        <article class="web-feature-card">
+          <h3 data-i18n="apps.types.custom.title">Custom interne alatke</h3>
+          <p data-i18n="apps.types.custom.body">
+            Sve što ti nedostaje između Excela i velikog ERP-a – kalkulatori,
+            checkliste, planeri, specifični workflow-ovi.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="web-section">
+      <div class="web-section-header">
+        <span class="pill-label" data-i18n="apps.process.pill">Proces</span>
+        <h2 class="web-section-title center" data-i18n="apps.process.title">
+          Kako izgleda saradnja oko business aplikacije
+        </h2>
+      </div>
+
+      <ol class="web-steps">
+        <li class="web-step">
+          <div class="web-step-badge">01</div>
+          <div class="web-step-body">
+            <h3 data-i18n="apps.process.1.title">Kratak razgovor o procesu</h3>
+            <p data-i18n="apps.process.1.body">
+              Prolazimo kroz to kako sada radiš (Excel, papiri, drugi softveri) 
+              i gde nastaje gubljenje vremena ili nerviranja.
+            </p>
+          </div>
+        </li>
+
+        <li class="web-step">
+          <div class="web-step-badge">02</div>
+          <div class="web-step-body">
+            <h3 data-i18n="apps.process.2.title">Skica ekrana i toka</h3>
+            <p data-i18n="apps.process.2.body">
+              Crtam jednostavne wireframe-ove: koje ekrane ima aplikacija, šta se gde vidi
+              i kojim redosledom ljudi prolaze kroz proces.
+            </p>
+          </div>
+        </li>
+
+        <li class="web-step">
+          <div class="web-step-badge">03</div>
+          <div class="web-step-body">
+            <h3 data-i18n="apps.process.3.title">Razvoj &amp; testiranje sa timom</h3>
+            <p data-i18n="apps.process.3.body">
+              Pravimo prvi radni prototip, testiraš ga sa 2–3 osobe iz tima, 
+              skupljamo feedback i doterevamo detalje.
+            </p>
+          </div>
+        </li>
+
+        <li class="web-step">
+          <div class="web-step-badge">04</div>
+          <div class="web-step-body">
+            <h3 data-i18n="apps.process.4.title">Lansiranje i kratka obuka</h3>
+            <p data-i18n="apps.process.4.body">
+              Postavljanje na server / hosting + kratko online vođenje (video ili poziv)
+              kako da koristite aplikaciju i koje su najbolje prakse.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    
+    <section class="web-section app-cta">
+      <div class="web-section-header">
+        <h2 class="web-section-title center" data-i18n="apps.cta.title">
+          Imaš ideju za internu aplikaciju?
+        </h2>
+        <p class="web-section-lead center" data-i18n="apps.cta.lead">
+          Napiši mi ukratko šta želiš da automatizuješ ili pojednostaviš
+          (CRM, magacin, troškovi, vreme...). 
+          Poslaću ti predlog rešenja i okvirnu cenu.
+        </p>
+      </div>
+
+      <div class="center">
+        <a href="index.html#contact" class="btn" data-i18n="apps.cta.btn">
+          Pošalji upit preko kontakt forme
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> T•Solutions.</p></footer>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll(".crm-tab");
+      const body = document.querySelector(".crm-body");
+      if (!tabs.length || !body) return;
+
+      const views = {
+        pipeline: `
+          <div class="crm-pipeline">
+            <div class="crm-column">
+              <div class="crm-column-title">Leads</div>
+              <div class="crm-card">
+                <div class="crm-card-title">NovaTech Logistics</div>
+                <div class="crm-card-meta">Kontakt: sales@novatech-logistics.com</div>
+                <div class="crm-card-badge">Source: Website form</div>
+              </div>
+              <div class="crm-card">
+                <div class="crm-card-title">GreenLine Consulting</div>
+                <div class="crm-card-meta">Kontakt: ana@greenline.co</div>
+                <div class="crm-card-badge">Source: Referral</div>
+              </div>
+            </div>
+
+            <div class="crm-column">
+              <div class="crm-column-title">Qualification</div>
+              <div class="crm-card">
+                <div class="crm-card-title">Urban Office Solutions</div>
+                <div class="crm-card-meta">Deal: CRM + internal inventory app</div>
+                <div class="crm-card-meta small">Owner: Tanja • Est: 4.200€</div>
+              </div>
+              <div class="crm-card">
+                <div class="crm-card-title">Delta Freight Group</div>
+                <div class="crm-card-meta">Deal: Fleet tracking dashboard</div>
+                <div class="crm-card-meta small">Owner: Tanja • Est: 3.800€</div>
+              </div>
+            </div>
+
+            <div class="crm-column">
+              <div class="crm-column-title">Proposal</div>
+              <div class="crm-card">
+                <div class="crm-card-title">Skybridge Real Estate</div>
+                <div class="crm-card-meta">Deal: Website + lead management portal</div>
+                <div class="crm-card-meta small">Sent: 08.04 • Est: 2.900€</div>
+                <div class="crm-card-badge">Follow-up Monday</div>
+              </div>
+            </div>
+
+            <div class="crm-column">
+              <div class="crm-column-title">Won</div>
+              <div class="crm-card crm-card-success">
+                <div class="crm-card-title">Nordic Industrial Group</div>
+                <div class="crm-card-meta">Deal: Production dashboard + QR magazin</div>
+                <div class="crm-card-meta small">Signed: 02.04 • Value: 6.500€</div>
+              </div>
+              <div class="crm-card crm-card-success">
+                <div class="crm-card-title">MetroCafe Chain</div>
+                <div class="crm-card-meta">Deal: QR menus + internal app za troškove</div>
+                <div class="crm-card-meta small">Signed: 26.03 • Value: 3.200€</div>
+              </div>
+            </div>
+          </div>
+        `,
+        companies: `
+          <div class="crm-table-wrapper">
+            <table class="crm-table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Industry</th>
+                  <th>Owner</th>
+                  <th>Status</th>
+                  <th>Next step</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nordic Industrial Group</td>
+                  <td>Manufacturing</td>
+                  <td>Tanja</td>
+                  <td><span class="tag tag-success">Active project</span></td>
+                  <td>Define phase 2 (production KPIs)</td>
+                </tr>
+                <tr>
+                  <td>Urban Office Solutions</td>
+                  <td>Office equipment</td>
+                  <td>Tanja</td>
+                  <td><span class="tag tag-warning">Proposal sent</span></td>
+                  <td>Schedule technical call</td>
+                </tr>
+                <tr>
+                  <td>Delta Freight Group</td>
+                  <td>Logistics</td>
+                  <td>Tanja</td>
+                  <td><span class="tag tag-open">In qualification</span></td>
+                  <td>Collect current Excel templates</td>
+                </tr>
+                <tr>
+                  <td>MetroCafe Chain</td>
+                  <td>Hospitality</td>
+                  <td>Tanja</td>
+                  <td><span class="tag tag-success">Live</span></td>
+                  <td>Plan training for new locations</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        tasks: `
+          <div class="crm-tasks">
+            <div class="crm-task-row">
+              <div>
+                <div class="crm-task-title">Pripremiti demo za “Urban Office Solutions”</div>
+                <div class="crm-task-meta">Vezano za: CRM + inventory • Rok: petak, 11:00</div>
+              </div>
+              <span class="tag tag-open">In progress</span>
+            </div>
+            <div class="crm-task-row">
+              <div>
+                <div class="crm-task-title">Poslati follow-up za “Skybridge Real Estate”</div>
+                <div class="crm-task-meta">Faza: Proposal • Rok: ponedeljak, 09:30</div>
+              </div>
+              <span class="tag tag-warning">Follow-up</span>
+            </div>
+            <div class="crm-task-row">
+              <div>
+                <div class="crm-task-title">Dogovoriti radionicu sa “Nordic Industrial Group”</div>
+                <div class="crm-task-meta">Tema: proces u proizvodnji • Rok: četvrtak</div>
+              </div>
+              <span class="tag tag-success">Key client</span>
+            </div>
+          </div>
+        `
+      };
+
+      function render(view) {
+        body.innerHTML = views[view] || "";
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => t.classList.remove("is-active"));
+          tab.classList.add("is-active");
+          render(tab.dataset.view);
+        });
+      });
+
+      
+      render("pipeline");
+    });
+  </script>
+
   <script src="assets/main.js"></script>
 </body>
 </html>

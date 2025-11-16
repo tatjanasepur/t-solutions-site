@@ -31,7 +31,6 @@
       </details>
 
       <a href="about.html" data-i18n="nav.about">About</a>
-
       <div class="spacer"></div>
 
       <div class="lang-switch">
@@ -39,59 +38,71 @@
         <button data-lang="sr">SR</button>
       </div>
 
-      <div class="theme-switch">
-        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
-      </div>
+      
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1 id="typewriter" class="gradient-text" data-type="T•Solutions"></h1>
-      <p class="tagline" data-i18n="hero.tagline">Modern solutions that feel tailor-made for your business.</p>
-    </section>
+  <h1 class="logo-main">T•Solutions</h1>
+  <p class="tagline" data-i18n="hero.tagline">We turn your ideas into practical digital products.</p>
+</section>
+
 
     <section class="pitch reveal">
-      <h2 data-i18n="pitch.title">Need a modern solution for your business?</h2>
-      <p data-i18n="pitch.body">You came to the right place. Find out more about our offers below.</p>
+      <h2 data-i18n="pitch.title">Ready to grow your business online?</h2>
+      <p data-i18n="pitch.body">Let’s make your website, app or digital system simple, modern and effective.</p>
     </section>
 
     <section class="cards">
       <article class="card glass reveal" data-tilt>
         <h3 data-i18n="cards.qr.title">QR Menus for Restaurants</h3>
-        <p data-i18n="cards.qr.body">Contactless ordering per table with unique QR codes. Orders go straight to the bar/POS.</p>
+        <p data-i18n="cards.qr.body">Simple digital menus your guests love — scan, order and enjoy.</p>
         <a class="btn" href="qr.html" data-i18n="cards.learn">Learn more</a>
       </article>
 
       <article class="card glass reveal" data-tilt>
         <h3 data-i18n="cards.web.title">Custom Websites</h3>
-        <p data-i18n="cards.web.body">From landing pages to full sites: bookings, pricing, offers, and conversions.</p>
+        <p data-i18n="cards.web.body">Fast, modern websites that attract customers and build trust.</p>
         <a class="btn" href="websites.html" data-i18n="cards.learn">Learn more</a>
       </article>
 
       <article class="card glass reveal" data-tilt>
         <h3 data-i18n="cards.apps.title">Business Apps</h3>
-        <p data-i18n="cards.apps.body">CRM, inventory, expenses, time tracking — built to your process, not the other way around.</p>
+        <p data-i18n="cards.apps.body">Smart apps that save time and keep your business organized.</p>
         <a class="btn" href="apps.html" data-i18n="cards.learn">Learn more</a>
       </article>
     </section>
 
     <section id="contact" class="contact reveal">
       <h2 data-i18n="contact.title">Let’s talk</h2>
-      <p data-i18n="contact.desc">Tell us about your idea. We’ll reply with a plan and timeline.</p>
+      <p data-i18n="contact.desc">Tell us your idea. We’ll turn it into a solution.</p>
 
       <form id="contactForm" class="contact-form">
+        
         <input type="text" name="company" class="hp" autocomplete="off" tabindex="-1" style="position:absolute;left:-5000px;opacity:0;">
+
+        <label>
+          <span data-i18n="contact.name">Your name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
         <label>
           <span data-i18n="contact.email">Your email</span>
-          <input type="email" name="from_email" placeholder="you@example.com" required>
+          <input type="email" name="email" placeholder="you@example.com" required>
         </label>
+
         <label>
           <span data-i18n="contact.message">Message</span>
           <textarea name="message" rows="5" placeholder="What do you need?" required></textarea>
         </label>
-        <button type="submit" class="btn" data-i18n="contact.send">Send</button>
-        <p class="hint" data-i18n="contact.hint">(Messages go to tsolutionsdev@outlook.com.)</p>
+
+        <button type="submit" id="sendBtn" class="btn-glass" data-i18n="contact.send">
+          <span class="btn-label">Send</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p id="status" class="status" style="margin-top:8px"></p>
       </form>
     </section>
   </main>
@@ -101,5 +112,6 @@
   </footer>
 
   <script src="assets/main.js"></script>
+  <script src="assets/contact.js"></script>
 </body>
 </html>

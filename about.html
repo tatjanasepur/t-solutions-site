@@ -12,7 +12,10 @@
     <nav class="nav" aria-label="Primary">
       <a href="index.html" data-i18n="nav.home">Home</a>
       <details class="dropdown">
-        <summary class="dropdown-summary"><span data-i18n="nav.services">Services</span><span class="caret" aria-hidden>▾</span></summary>
+        <summary class="dropdown-summary">
+          <span data-i18n="nav.services">Services</span>
+          <span class="caret" aria-hidden>▾</span>
+        </summary>
         <ul>
           <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
           <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
@@ -21,39 +24,88 @@
       </details>
       <a href="about.html" aria-current="page" data-i18n="nav.about">About</a>
       <div class="spacer"></div>
-      <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="sr">SR</button></div>
-      <div class="theme-switch"><button id="themeToggle" aria-label="Toggle theme">🌙</button></div>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+      
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
       <h1 class="gradient-text" data-i18n="about.title">Why T•Solutions</h1>
-      <p data-i18n="about.subtitle">We avoid templates. We build what fits you and feels like you.</p>
+      <p data-i18n="about.subtitle">
+        We don’t just build websites — we build confidence in your brand. Every project is unique, fast, and designed to impress at first sight.
+      </p>
     </section>
 
     <section class="grid-2 pad">
       <div>
-        <h2 data-i18n="about.values.title">Values</h2>
+        <h2 data-i18n="about.values.title">Solutions</h2>
         <ul class="checklist">
-          <li data-i18n="about.values.1">Unique design — no cookie-cutter.</li>
-          <li data-i18n="about.values.2">Performance & accessibility first.</li>
-          <li data-i18n="about.values.3">Clarity, docs, and handover.</li>
-          <li data-i18n="about.values.4">Iterate with you, not at you.</li>
+          <li data-i18n="about.values.1">Custom digital experiences built to fit your vision and business goals.</li>
+          <li data-i18n="about.values.2">Elegant web design and smart business applications that simplify your workflow.</li>
+          <li data-i18n="about.values.3">Fast, reliable, and designed to leave a lasting impression on every user.</li>
+          <li data-i18n="about.values.4">Your success is our process — we grow together, not apart.</li>
         </ul>
       </div>
+
       <div>
         <h2 data-i18n="about.for.title">For whom</h2>
         <ul>
-          <li data-i18n="about.for.1">Restaurants & cafés → QR menus + POS.</li>
-          <li data-i18n="about.for.2">Businesses that need a site that sells.</li>
-          <li data-i18n="about.for.3">Firms that need internal apps.</li>
+          <li data-i18n="about.for.1">Restaurants and cafés that want to modernize with QR menus and digital style.</li>
+          <li data-i18n="about.for.2">Growing brands that need a recognizable digital identity and higher sales.</li>
+          <li data-i18n="about.for.3">Companies that need applications that bring efficiency, accuracy, and less stress to their business.</li>
         </ul>
+      </div>
+    </section>
+
+    
+    <section class="reveal"
+      style="max-width:1100px; margin:40px auto 20px; padding:0 16px; display:flex; align-items:center; justify-content:center; gap:20px; flex-wrap:wrap; text-align:center;">
+      
+      <h3 data-i18n="about.social.title"
+          style="font-weight:600; font-size:1.1rem; margin:0; min-width:240px; text-align:right;">
+          Find us on social media
+      </h3>
+
+      <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;">
+
+        <a href="https://www.instagram.com/t_solutions.dev/" target="_blank" rel="noopener" aria-label="Instagram"
+           style="display:inline-flex; align-items:center; justify-content:center; width:58px; height:58px;
+                  border-radius:16px; border:1px solid var(--border); backdrop-filter:blur(10px);
+                  background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+                  box-shadow:var(--shadow);">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30" height="30" loading="lazy">
+        </a>
+
+        <a href="https://www.linkedin.com/in/t-solutions-5a72a337a/" target="_blank" rel="noopener" aria-label="LinkedIn"
+           style="display:inline-flex; align-items:center; justify-content:center; width:58px; height:58px;
+                  border-radius:16px; border:1px solid var(--border); backdrop-filter:blur(10px);
+                  background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+                  box-shadow:var(--shadow);">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30" loading="lazy">
+        </a>
+
+        <a href="mailto:t.solutions.dev@gmail.com" aria-label="Email"
+           style="display:inline-flex; align-items:center; justify-content:center; width:58px; height:58px;
+                  border-radius:16px; border:1px solid var(--border); backdrop-filter:blur(10px);
+                  background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+                  box-shadow:var(--shadow);">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="30" height="30" loading="lazy">
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> T•Solutions.</p></footer>
+  <footer class="site-footer">
+    <p>
+      © <span id="year"></span> T•Solutions.
+      <span data-i18n="footer.rights">All rights reserved.</span>
+    </p>
+  </footer>
+
   <script src="assets/main.js"></script>
 </body>
 </html>

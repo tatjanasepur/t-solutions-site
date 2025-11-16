@@ -3,72 +3,433 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>QR Menus — T•Solutions</title>
+  <title data-i18n="qr.metaTitle">QR meniji — T•Solutions</title>
+  <meta name="description" content="T•Solutions QR meniji za restorane i kafiće — skeniraj, izaberi, naruči, uživaj. Brža usluga, manje grešaka, promocije u realnom vremenu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="T•Solutions Home"><span class="brand-mark">●</span></a>
+    <a class="brand" href="index.html" aria-label="T•Solutions Home">
+      <span class="brand-mark">●</span>
+      <strong>T•Solutions</strong>
+    </a>
+
     <nav class="nav" aria-label="Primary">
-      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="index.html" data-i18n="nav.home">Početna</a>
+
       <details class="dropdown">
-        <summary class="dropdown-summary"><span data-i18n="nav.services">Services</span><span class="caret" aria-hidden>▾</span></summary>
+        <summary class="dropdown-summary">
+          <span data-i18n="nav.services">Usluge</span><span class="caret" aria-hidden>▾</span>
+        </summary>
         <ul>
-          <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
-          <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
-          <li><a href="apps.html" data-i18n="nav.apps">Business Apps</a></li>
+          <li><a href="qr.html" aria-current="page" data-i18n="nav.qr">QR meniji</a></li>
+          <li><a href="websites.html" data-i18n="nav.websites">Veb-sajtovi</a></li>
+          <li><a href="apps.html" data-i18n="nav.apps">Poslovne aplikacije</a></li>
         </ul>
       </details>
-      <a href="about.html" data-i18n="nav.about">About</a>
+
+      <a href="about.html" data-i18n="nav.about">O nama</a>
       <div class="spacer"></div>
-      <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="sr">SR</button></div>
-      <div class="theme-switch"><button id="themeToggle" aria-label="Toggle theme">🌙</button></div>
+
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr" class="active">SR</button>
+      </div>
+
+      
     </nav>
   </header>
 
   <main>
-    <section class="page-hero">
-      <h1 class="gradient-text" data-i18n="qr.title">QR Menus for Tables</h1>
-      <p data-i18n="qr.subtitle">Unique QR per table → scan, order, and the POS gets the order instantly.</p>
-    </section>
+    
+    <section class="page-hero hero-qr">
+      <h1 class="gradient-text center" data-i18n="qr.title">QR meniji za restorane i kafiće</h1>
+      <p class="tagline center" data-i18n="qr.subtitle">
+        Jednostavan digitalni meni — skeniraj, poruči, uživaj. Bez instalacije.
+      </p>
 
-    <section class="split">
-      <div>
-        <h2 data-i18n="qr.how.title">How it works</h2>
-        <ol>
-          <li data-i18n="qr.how.1">Each table has a unique QR code with its table number.</li>
-          <li data-i18n="qr.how.2">Guests scan → see menu on their phone → place order.</li>
-          <li data-i18n="qr.how.3">Order appears on the bar/kitchen POS with the correct table.</li>
-          <li data-i18n="qr.how.4">Staff confirms/serves. No waiting, faster turnover.</li>
-        </ol>
+      
+      <div class="pad">
+        <div class="media-frame qr-devices-frame reveal">
+         
+          <div class="qr-tablet">
+            <img
+              src="assets/img/ts-tablet-dashboard.png"
+              alt="T•Solutions — QR meniji · Dashboard"
+              class="qr-tablet-img"
+            >
+          </div>
 
-        <h3 data-i18n="qr.why.title">Why it’s great</h3>
-        <ul>
-          <li data-i18n="qr.why.1">Less walking for staff, more attention where it matters.</li>
-          <li data-i18n="qr.why.2">Guests order immediately — no waiting for a waiter.</li>
-          <li data-i18n="qr.why.3">Upsell with photos, combos, and specials.</li>
-          <li data-i18n="qr.why.4">Clean itemized bill by table for easy checkout.</li>
-        </ul>
-      </div>
+          
+          <div class="staff-phone">
+            <div class="staff-phone-notch"></div>
+            <div class="staff-phone-screen">
+              <div class="staff-phone-header">
+                <span class="staff-tag" data-i18n="qr.staffPhone.badge">Nova porudžbina</span>
+                <div class="staff-order-meta">
+                  <span data-i18n="qr.staffPhone.table">Sto 4 · Terasa</span>
+                  <span data-i18n="qr.staffPhone.time">12:36</span>
+                </div>
+              </div>
 
-      <div class="mock">
-        <div class="table-mock">
-          <div class="table-number">12</div>
-          <div class="qr"></div>
-        </div>
-        <div class="phone-mock">
-          <div class="notch"></div>
-          <div class="screen">
-            <div class="menu-item"></div>
-            <div class="menu-item"></div>
-            <div class="menu-item wide"></div>
+              <ul class="staff-order-list">
+                <li>
+                  <span>Cheeseburger x1</span>
+                  <span>420 RSD</span>
+                </li>
+                <li>
+                  <span>Espresso x1</span>
+                  <span>190 RSD</span>
+                </li>
+                <li>
+                  <span data-i18n="qr.staffPhone.item3">Limunada x2</span>
+                  <span>540 RSD</span>
+                </li>
+              </ul>
+
+              <div class="staff-order-note" data-i18n="qr.staffPhone.note">
+                Napomena: bez luka, dodatni sos.
+              </div>
+
+              <div class="staff-phone-actions">
+                <button class="staff-btn-outline">
+                  <span data-i18n="qr.staffPhone.hold">Na čekanju</span>
+                </button>
+                <button class="staff-btn-primary">
+                  <span data-i18n="qr.staffPhone.accept">Prihvati porudžbinu</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    
+    <section class="how center">
+      <h2 data-i18n="qr.how.heading">Kako funkcioniše</h2>
+      <div class="how-steps">
+        <div class="step reveal">
+          <span class="badge">1</span>
+          <h3 data-i18n="qr.how.1.t">Skeniraj</h3>
+          <p data-i18n="qr.how.1">Gost skenira QR kod i otvara meni.</p>
+        </div>
+        <div class="step reveal">
+          <span class="badge">2</span>
+          <h3 data-i18n="qr.how.2.t">Izaberi</h3>
+          <p data-i18n="qr.how.2">Dodaje artikle u korpu i ostavlja napomenu.</p>
+        </div>
+        <div class="step reveal">
+          <span class="badge">3</span>
+          <h3 data-i18n="qr.how.3.t">Naruči</h3>
+          <p data-i18n="qr.how.3">Porudžbina stiže osoblju u realnom vremenu.</p>
+        </div>
+        <div class="step reveal">
+          <span class="badge">4</span>
+          <h3 data-i18n="qr.how.4.t">Uživaj</h3>
+          <p data-i18n="qr.how.4">Priprema i usluga su brži.</p>
+        </div>
+        <div class="step reveal">
+          <span class="badge">5</span>
+          <h3 data-i18n="qr.how.5.t">Račun</h3>
+          <p data-i18n="qr.how.5">Gost bira način plaćanja i traži račun.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="why">
+      <h2 class="center" data-i18n="qr.why.heading">Zašto izabrati T•Solutions QR menije</h2>
+      <div class="grid-3 pad">
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.1.t">Autonomija</h3>
+          <p data-i18n="qr.benefits.1">Gosti sami sklapaju porudžbinu i vide ukupno — manje grešaka.</p>
+        </article>
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.2.t">Udobnost</h3>
+          <p data-i18n="qr.benefits.2">Poručivanje, zahtev za račun i poziv konobara u par dodira.</p>
+        </article>
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.3.t">Brzina</h3>
+          <p data-i18n="qr.benefits.3">Nalozi stižu u realnom vremenu — brža priprema i usluga.</p>
+        </article>
+
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.4.t">Detaljne informacije</h3>
+          <p data-i18n="qr.benefits.4">Fotografije, opisi i napomene za svaki artikal.</p>
+        </article>
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.5.t">Fleksibilnost</h3>
+          <p data-i18n="qr.benefits.5">Žive izmene menija; sakrivanje nedostupnih stavki jednim klikom.</p>
+        </article>
+        <article class="card glass feature-card reveal">
+          <h3 data-i18n="qr.benefits.6.t">Multijezično</h3>
+          <p data-i18n="qr.benefits.6">Meni na više jezika, osoblje dobija poruke na maternjem.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="split pad features">
+      <div>
+        <h2 data-i18n="qr.guests.title">FUNKCIONALNOSTI za GOSTE</h2>
+        <ul class="checklist">
+          <li data-i18n="qr.guests.1">Otvaranje menija skeniranjem QR koda.</li>
+          <li data-i18n="qr.guests.2">Odabir jezika menija.</li>
+          <li data-i18n="qr.guests.3">Pregled, dodavanje u korpu i napomene za kuhinju.</li>
+          <li data-i18n="qr.guests.4">Slanje narudžbina sa brojem stola/sobe/lokacije.</li>
+          <li data-i18n="qr.guests.5">Poziv konobara i dodatni zahtevi.</li>
+          <li data-i18n="qr.guests.6">Zahtev za račun i izbor načina plaćanja.</li>
+        </ul>
+      </div>
+
+      
+      <div class="media-frame reveal">
+        <div class="qr-demo-phone" id="qrDemoPhone">
+          <div class="qr-demo-notch"></div>
+
+          <div class="qr-demo-shell">
+            
+            <div class="qr-demo-cover">
+              <div class="qr-demo-lang-pill" data-i18n="qr.demo.langPill">
+                EN · SR
+              </div>
+              <div class="qr-demo-rest">
+                <h3 data-i18n="qr.demo.title">QR meni demo</h3>
+                <p data-i18n="qr.demo.desc">
+                  Gost bira hranu i piće, odmah vidi ukupnu cenu i šalje porudžbinu.
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="qr-demo-tabs">
+              <button class="active" data-menu="main" data-i18n="qr.demo.tab.main">Main menu</button>
+              <button data-menu="bar" data-i18n="qr.demo.tab.bar">Bar</button>
+            </div>
+
+            
+            <div class="qr-demo-body">
+
+              
+              <div class="qr-demo-view qr-demo-view--categories" data-menu="main"></div>
+
+              
+              <div class="qr-demo-view qr-demo-view--categories" data-menu="bar" hidden></div>
+
+              
+              <div class="qr-demo-view qr-demo-view--items" hidden></div>
+
+              
+              <div class="qr-demo-view qr-demo-view--order" hidden></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="split pad features">
+      
+      <div class="media-frame reveal">
+        <div class="staff-dashboard">
+          <div class="sd-header">
+            <div class="sd-title" data-i18n="qr.admin.title">
+              T•Solutions — Administracija menija
+            </div>
+            <div class="sd-filter"></div>
+          </div>
+
+          <div class="sd-table">
+            <div class="sd-row sd-head">
+              <span data-i18n="qr.admin.th.item">Artikal</span>
+              <span data-i18n="qr.admin.th.category">Kategorija</span>
+              <span data-i18n="qr.admin.th.price">Cena</span>
+              <span data-i18n="qr.admin.th.active">Aktivno</span>
+            </div>
+
+            <div class="sd-row">
+              <span>Avokado kajgana</span>
+              <span data-i18n="qr.admin.breakfast">Doručak</span>
+              <span>710 RSD</span>
+              <span>
+                <label class="toggle">
+                  <input type="checkbox" checked />
+                  <i></i>
+                </label>
+              </span>
+            </div>
+
+            <div class="sd-row">
+              <span>Cheeseburger</span>
+              <span data-i18n="qr.admin.mains">Glavna jela</span>
+              <span>650 RSD</span>
+              <span>
+                <label class="toggle">
+                  <input type="checkbox" checked />
+                  <i></i>
+                </label>
+              </span>
+            </div>
+
+            <div class="sd-row">
+              <span>Mojito</span>
+              <span data-i18n="qr.admin.cocktails">Kokteli</span>
+              <span>690 RSD</span>
+              <span>
+                <label class="toggle">
+                  <input type="checkbox" />
+                  <i></i>
+                </label>
+              </span>
+            </div>
+          </div>
+
+          <div class="sd-footer">
+            <button class="sd-btn" data-i18n="qr.admin.addItem">
+              Dodaj novi artikal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 data-i18n="qr.staff.title">FUNKCIONALNOSTI za OSOBLJE</h2>
+        <ul class="checklist">
+          <li data-i18n="qr.staff.1">Uređivanje kategorija, artikala i cena u realnom vremenu.</li>
+          <li data-i18n="qr.staff.2">Fotografije, opisi i akcije vidljivi odmah gostima.</li>
+          <li data-i18n="qr.staff.3">Sakrivanje nedostupnih stavki jednim klikom.</li>
+          <li data-i18n="qr.staff.4">Primanje narudžbina bez odlaska do stola.</li>
+          <li data-i18n="qr.staff.5">Multijezičnost — poruke stižu na maternjem jeziku.</li>
+          <li data-i18n="qr.staff.6">Brži rad i manje grešaka.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="split pad kit">
+      <div>
+        <h2 data-i18n="qr.kit.title">Paket „ključ u ruke“</h2>
+        <ul class="checklist">
+          <li data-i18n="qr.kit.1">Softver spreman za rad + hosting.</li>
+          <li data-i18n="qr.kit.2">QR kodovi spremni za štampu.</li>
+          <li data-i18n="qr.kit.3">PDF uputstvo i prioritetna podrška.</li>
+          <li data-i18n="qr.kit.4">Opcioni prevodi i brendirani stalci.</li>
+        </ul>
+      </div>
+      <div class="media-frame reveal">
+        
+        <div class="qr-kit-mock">
+          <div class="qr-kit-background"></div>
+
+          <div class="qr-kit-phone">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="qr-hero-photo">
+                <div class="qr-lang-pill" data-i18n="qr.kit.langPill">
+                  Srpski / English
+                </div>
+              </div>
+
+              <div class="qr-menu-header">
+                <h4 data-i18n="qr.kit.headerTitle">T•Solutions QR meni</h4>
+                <p data-i18n="qr.kit.headerDesc">Primer digitalnog menija za goste.</p>
+              </div>
+
+              <div class="qr-menu-search"></div>
+
+              <div class="qr-menu-cards">
+  <div class="qr-menu-card">
+    <div class="qr-menu-thumb qr-thumb-breakfast"></div>
+    <div>
+      <strong data-i18n="qr.kit.card1.title">Doručak &amp; kafa</strong><br>
+      <span data-i18n="qr.kit.card1.text">Omleti, tost, espreso, kapućino…</span>
+    </div>
+  </div>
+
+  <div class="qr-menu-card">
+    <div class="qr-menu-thumb qr-thumb-burger"></div>
+    <div>
+      <strong data-i18n="qr.kit.card2.title">Burgeri &amp; pomfrit</strong><br>
+      <span data-i18n="qr.kit.card2.text">Cheeseburger, pomfrit, sosovi.</span>
+    </div>
+  </div>
+
+  <div class="qr-menu-card">
+    <div class="qr-menu-thumb qr-thumb-dessert"></div>
+    <div>
+      <strong data-i18n="qr.kit.card3.title">Pića &amp; deserti</strong><br>
+      <span data-i18n="qr.kit.card3.text">Sokovi, kolači i više.</span>
+    </div>
+  </div>
+</div>
+
+
+              <div class="qr-menu-cta" data-i18n="qr.kit.cta">
+                Poruči sa QR menija
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="contact reveal">
+      <h2 data-i18n="qr.cta.title">Spremni za demo?</h2>
+      <p data-i18n="qr.cta.body">Pošaljite nam poruku — odgovaramo sa planom i rokom isporuke.</p>
+
+            <form id="contactForm" class="contact-form" style="grid-template-columns:1fr; max-width:640px; margin:0 auto;">
+        
+        <input
+          type="text"
+          name="company"
+          class="hp"
+          autocomplete="off"
+          tabindex="-1"
+          style="position:absolute;left:-5000px;opacity:0;"
+        >
+
+        <label>
+          <span data-i18n="contact.name">Vaše ime</span>
+          <input type="text" name="name" placeholder="Vaše ime" required>
+        </label>
+
+        <label>
+          <span data-i18n="contact.email">Vaš email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          <span data-i18n="contact.message">Poruka</span>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Napišite ukratko šta vam treba…"
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit" id="sendBtn" class="btn-glass">
+          <span class="btn-label" data-i18n="qr.cta.btn">Zakaži razgovor</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p id="status" class="status" style="margin-top:8px"></p>
+      </form>
+
+    </section>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> T•Solutions.</p></footer>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions. <span data-i18n="footer.rights">Sva prava zadržana.</span></p>
+  </footer>
+
   <script src="assets/main.js"></script>
+  <script src="assets/contact.js"></script>
 </body>
 </html>

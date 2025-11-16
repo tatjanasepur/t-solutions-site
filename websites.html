@@ -12,7 +12,10 @@
     <nav class="nav" aria-label="Primary">
       <a href="index.html" data-i18n="nav.home">Home</a>
       <details class="dropdown">
-        <summary class="dropdown-summary"><span data-i18n="nav.services">Services</span><span class="caret" aria-hidden>▾</span></summary>
+        <summary class="dropdown-summary">
+          <span data-i18n="nav.services">Services</span>
+          <span class="caret" aria-hidden>▾</span>
+        </summary>
         <ul>
           <li><a href="qr.html" data-i18n="nav.qr">QR Menus</a></li>
           <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
@@ -21,42 +24,397 @@
       </details>
       <a href="about.html" data-i18n="nav.about">About</a>
       <div class="spacer"></div>
-      <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="sr">SR</button></div>
-      <div class="theme-switch"><button id="themeToggle" aria-label="Toggle theme">🌙</button></div>
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="sr">SR</button>
+      </div>
+      
     </nav>
   </header>
 
   <main>
-    <section class="page-hero">
-      <h1 class="gradient-text" data-i18n="web.title">Custom Websites that Convert</h1>
-      <p data-i18n="web.subtitle">Show up with a beautiful, fast, mobile-first website tailored to your business.</p>
+    
+    <section class="web-hero">
+      <div class="web-hero-inner">
+        <div class="web-hero-copy">
+          <p class="web-kicker" data-i18n="web.hero.kicker">Websites</p>
+          <h1 class="gradient-text web-hero-title" data-i18n="web.hero.title">
+            Websites for ambitious<br />
+            local businesses
+          </h1>
+          <p class="web-hero-subtitle" data-i18n="web.hero.subtitle">
+            Dizajniram i kodiram moderne, brze i mobilne sajtove koji izgledaju
+            ozbiljno i dovode ljude do akcije – bilo da želiš više poziva, rezervacija ili
+            prodaja.
+          </p>
+          <ul class="web-hero-list">
+            <li data-i18n="web.hero.list.1">
+              Jasan fokus na tvojim ciljevima (više upita, prodaje, rezervacija).
+            </li>
+            <li data-i18n="web.hero.list.2">
+              Mobile-first layout – sajt izgleda odlično na telefonu, tabletu i desktopu.
+            </li>
+            <li data-i18n="web.hero.list.3">
+              Tehnički sređen SEO i povezivanje sa Google Analytics alatima.
+            </li>
+            <li data-i18n="web.hero.list.4">
+              Brzo učitavanje i jednostavno održavanje bez komplikovanog CMS-a.
+            </li>
+          </ul>
+        </div>
+
+        <div class="web-hero-mockup">
+          <img
+            src="assets/img/websites-mockup.png"
+            alt="T•Solutions website mockup on laptop and phones"
+          />
+        </div>
+      </div>
     </section>
 
-    <section class="grid-2">
-      <div>
-        <h2 data-i18n="web.examples.title">Examples by niche</h2>
-        <ul>
-          <li data-i18n="web.examples.1">Gym: bookings, schedule, trainers, pricing, locations.</li>
-          <li data-i18n="web.examples.2">Boutique: products, inventory, checkout, featured items.</li>
-          <li data-i18n="web.examples.3">Restaurant: menu, specials, delivery/pickup integrations.</li>
-          <li data-i18n="web.examples.4">Services: portfolio, contact, testimonials, lead forms.</li>
-        </ul>
+    
+    <section class="web-section">
+      <div class="web-two-column">
+        <div>
+          <h2 class="web-section-title" data-i18n="web.section.what.title">
+            Šta sve može tvoj sajt da radi
+          </h2>
+          <p class="web-section-lead" data-i18n="web.section.what.lead">
+            Svaki biznis je drugačiji, zato ne radim generičke templejte. Prilagođavam
+            strukturu, sadržaj i funkcionalnosti onome što zaista treba tvojim kupcima.
+          </p>
+          <ul class="web-bullet-list">
+            <li data-i18n="web.section.what.1">
+              <strong>Teretane / studiji</strong> – raspored treninga, zakazivanje, treneri, članarine.
+            </li>
+            <li data-i18n="web.section.what.2">
+              <strong>Restorani / kafići</strong> – meni, specijalne ponude, rezervacije, QR meni.
+            </li>
+            <li data-i18n="web.section.what.3">
+              <strong>Butici / brendovi</strong> – kolekcije, istaknuti proizvodi, formular za porudžbine.
+            </li>
+            <li data-i18n="web.section.what.4">
+              <strong>Uslužne delatnosti</strong> – portfolio, iskustva klijenata, kontakt i upit formulari.
+            </li>
+          </ul>
+        </div>
+
+        <aside class="web-card web-card-gradient">
+          <h3 data-i18n="web.section.get.title">Šta tačno dobijaš</h3>
+          <ul class="web-card-list">
+            <li data-i18n="web.section.get.1">
+              Kompletan dizajn sistem (boje, tipografija, komponente).
+            </li>
+            <li data-i18n="web.section.get.2">
+              Organizovanu strukturu stranica i sadržaja.
+            </li>
+            <li data-i18n="web.section.get.3">
+              On-page SEO osnove + tehničko sređivanje.
+            </li>
+            <li data-i18n="web.section.get.4">
+              Povezivanje sa Google Analytics i osnovnim alatima.
+            </li>
+            <li data-i18n="web.section.get.5">
+              Hosting rešenje (GitHub Pages / Netlify / po dogovoru).
+            </li>
+            <li data-i18n="web.section.get.6">
+              Video uputstvo ili kratko online vođenje kako da samostalno menjaš tekstove.
+            </li>
+          </ul>
+        </aside>
+      </div>
+      
+    </section>
+
+    
+    <section class="web-section">
+      <div class="web-section-header">
+        <span class="pill-label" data-i18n="web.why.pill">Zašto baš T•Solutions</span>
+        <h2 class="web-section-title center" data-i18n="web.why.title">
+          Poštujem tvoje vreme, budžet i realne potrebe
+        </h2>
+        <p class="web-section-lead center" data-i18n="web.why.lead">
+          Ne guram stvari koje ti ne trebaju. Cilj je čist, funkcionalan sajt koji se brzo podiže
+          i koji te ne košta živaca svaki put kad želiš malu izmenu.
+        </p>
       </div>
 
-      <div class="glass pad">
-        <h3 data-i18n="web.cta.title">What you get</h3>
-        <ul class="checklist">
-          <li data-i18n="web.cta.1">Design system (colors, type, components)</li>
-          <li data-i18n="web.cta.2">SEO & analytics ready</li>
-          <li data-i18n="web.cta.3">Fast hosting (GitHub Pages/Netlify)</li>
-          <li data-i18n="web.cta.4">Easy editing for you</li>
-        </ul>
-        <a class="btn" href="#contact" data-i18n="web.cta.btn">Get a quote</a>
+      <div class="web-feature-grid">
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.1.title">UX/UI dizajn</h3>
+          <p data-i18n="web.why.1.body">
+            Fokus na jasnoći – korisnik odmah vidi šta nudite, gde da klikne i kako da vas kontaktira.
+          </p>
+        </article>
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.2.title">Struktura &amp; sadržaj</h3>
+          <p data-i18n="web.why.2.body">
+            Pomažem da složimo stranice i sekcije tako da priča o tvom biznisu ima glavu i rep i vodi ka konverziji.
+          </p>
+        </article>
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.3.title">Čist front-end kod</h3>
+          <p data-i18n="web.why.3.body">
+            Ručno rađen HTML/CSS/JS – bez bespotrebnih plug-inova koji usporavaju sajt. Lakše održavanje, brže učitavanje.
+          </p>
+        </article>
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.4.title">SEO osnove uključene</h3>
+          <p data-i18n="web.why.4.body">
+            Pravilne H-oznake, meta podaci, alt tekstovi i interno linkovanje – baza za ozbiljniji SEO rad.
+          </p>
+        </article>
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.5.title">Brzina i performanse</h3>
+          <p data-i18n="web.why.5.body">
+            Optimizovane slike, kompresija i lazy-load gde ima smisla, da sajt radi glatko i na slabijim uređajima.
+          </p>
+        </article>
+        <article class="web-feature-card">
+          <h3 data-i18n="web.why.6.title">Podrška nakon izrade</h3>
+          <p data-i18n="web.why.6.body">
+            Posle lansiranja ne “nestajem” – možemo da dogovorimo dodatne izmene, održavanje ili dalji razvoj.
+          </p>
+        </article>
       </div>
+    </section>
+
+    
+    <section class="web-section">
+      <div class="web-section-header">
+        <span class="pill-label" data-i18n="web.process.pill">Proces</span>
+        <h2 class="web-section-title center" data-i18n="web.process.title">
+          Kako izgleda saradnja – od prvog mejla do gotovog sajta
+        </h2>
+      </div>
+
+      <ol class="web-steps">
+        <li class="web-step">
+          <div class="web-step-badge">01</div>
+          <div class="web-step-body">
+            <h3 data-i18n="web.process.1.title">Uvodni razgovor</h3>
+            <p data-i18n="web.process.1.body">
+              Kratak poziv ili detaljniji mejl gde prolazimo kroz ciljeve sajta, ciljnu grupu, primere sajtova koji ti se dopadaju i okvirni budžet.
+            </p>
+          </div>
+        </li>
+        <li class="web-step">
+          <div class="web-step-badge">02</div>
+          <div class="web-step-body">
+            <h3 data-i18n="web.process.2.title">Struktura i wireframe</h3>
+            <p data-i18n="web.process.2.body">
+              Predlažemo strukturu stranica (Početna, O nama, Usluge, Galerija, Kontakt…) i raspored sekcija. Kad to potvrdimo, prelazimo na dizajn.
+            </p>
+          </div>
+        </li>
+        <li class="web-step">
+          <div class="web-step-badge">03</div>
+          <div class="web-step-body">
+            <h3 data-i18n="web.process.3.title">Dizajn i vizuelni pravac</h3>
+            <p data-i18n="web.process.3.body">
+              Usklađujemo boje, tipografiju, fotografije i mikro-detalje da sajt izgleda kao ozbiljna prezentacija tvog brenda, ne generički template.
+            </p>
+          </div>
+        </li>
+        <li class="web-step">
+          <div class="web-step-badge">04</div>
+          <div class="web-step-body">
+            <h3 data-i18n="web.process.4.title">Razvoj i testiranje</h3>
+            <p data-i18n="web.process.4.body">
+              Kodiramo sajt, povezujemo kontakt formu, proveravamo izgled na više ekrana i testiramo brzinu učitavanja i osnovni SEO.
+            </p>
+          </div>
+        </li>
+        <li class="web-step">
+          <div class="web-step-badge">05</div>
+          <div class="web-step-body">
+            <h3 data-i18n="web.process.5.title">Puštanje u rad i kratko vođenje</h3>
+            <p data-i18n="web.process.5.body">
+              Postavljanje na hosting + kratko vođenje kako da menjaš sadržaj, dodaješ nove sekcije ili kasnije proširiš sajt.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    
+    <section class="web-section">
+      <div class="web-section-header">
+        <span class="pill-label" data-i18n="web.pricing.pill">Okvirne ponude</span>
+        <h2 class="web-section-title center" data-i18n="web.pricing.title">
+          Paketi koje možemo da prilagodimo tvom projektu
+        </h2>
+        <p class="web-section-lead center" data-i18n="web.pricing.lead">
+          Cene su orijentacione – cilj je da stekneš utisak o rangu. Nakon što opišeš projekat,
+          predložiću opciju koja ima smisla za tvoj budžet i ciljeve.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-pill" data-i18n="web.pricing.start.label">Start</div>
+          <h3 data-i18n="web.pricing.start.title">Mali biznis landing</h3>
+          <p class="pricing-price" data-i18n="web.pricing.start.price">od 150€</p>
+          <ul>
+            <li data-i18n="web.pricing.start.1">
+              Jedna stranica (landing) sa svim ključnim informacijama.
+            </li>
+            <li data-i18n="web.pricing.start.2">
+              Kontakt forma i mapa lokacije.
+            </li>
+            <li data-i18n="web.pricing.start.3">
+              Osnovni SEO i povezivanje sa Google Analytics.
+            </li>
+            <li data-i18n="web.pricing.start.4">
+              Idealno za frizere, salone, trenere, male lokale.
+            </li>
+          </ul>
+        </article>
+
+        <article class="pricing-card pricing-card-highlight">
+          <div class="pricing-pill" data-i18n="web.pricing.growth.label">Growth</div>
+          <h3 data-i18n="web.pricing.growth.title">Kompletan web sajt</h3>
+          <p class="pricing-price" data-i18n="web.pricing.growth.price">od 250–400€</p>
+          <ul>
+            <li data-i18n="web.pricing.growth.1">
+              Do ~6–8 stranica (Početna, O nama, Usluge, Galerija, Blog, Kontakt…).
+            </li>
+            <li data-i18n="web.pricing.growth.2">
+              Naprednije sekcije (FAQ, studije slučaja, galerije, forme…).
+            </li>
+            <li data-i18n="web.pricing.growth.3">
+              SEO osnove + bolje performanse i optimizacija brzine.
+            </li>
+            <li data-i18n="web.pricing.growth.4">
+              Preporučeno za ozbiljnije lokalne biznise i brendove.
+            </li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="pricing-pill" data-i18n="web.pricing.custom.label">Custom</div>
+          <h3 data-i18n="web.pricing.custom.title">Napredan ili specifičan projekat</h3>
+          <p class="pricing-price" data-i18n="web.pricing.custom.price">po dogovoru</p>
+          <ul>
+            <li data-i18n="web.pricing.custom.1">
+              Specifične funkcionalnosti (članstvo, prijave, više jezika, blog…).
+            </li>
+            <li data-i18n="web.pricing.custom.2">
+              Integracije sa drugim sistemima ili aplikacijama.
+            </li>
+            <li data-i18n="web.pricing.custom.3">
+              Detaljniji dizajn i više iteracija.
+            </li>
+            <li data-i18n="web.pricing.custom.4">
+              Mogućnost dugoročne saradnje i održavanja.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="web-section">
+      <h2 class="web-section-title" data-i18n="web.faq.title">Česta pitanja</h2>
+
+      <div class="faq-grid">
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.1.q">Koliko traje izrada sajta?</h3>
+          <p data-i18n="web.faq.1.a">
+            Za jednostavan landing obično 7–10 dana, za kompletniji sajt 2–4 nedelje, u zavisnosti od sadržaja i brzine dogovora oko dizajna.
+          </p>
+        </article>
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.2.q">Da li uključuješ hosting i domen?</h3>
+          <p data-i18n="web.faq.2.a">
+            Mogu da preporučim i podesim hosting/domen ili da radimo na onome što već imaš. Za male sajtove često koristim GitHub Pages ili Netlify.
+          </p>
+        </article>
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.3.q">Da li mogu kasnije sama da menjam tekst?</h3>
+          <p data-i18n="web.faq.3.a">
+            Da. Dobijaš kratko uputstvo kako da izmeniš osnovne tekstove i slike, ili mi se javljaš za povremene izmene.
+          </p>
+        </article>
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.4.q">Radite li i online prodavnice?</h3>
+          <p data-i18n="web.faq.4.a">
+            Da, ali to tretiram kao poseban projekat (WooCommerce / custom rešenja). Ako imaš e-commerce ideju, opiši je ukratko u upitu.
+          </p>
+        </article>
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.5.q">Šta ako još nemam spreman sadržaj?</h3>
+          <p data-i18n="web.faq.5.a">
+            Možemo da krenemo od osnovne strukture. Pomažem ti da definišeš koje sekcije i tekstovi su ti zaista potrebni i šta može da ostane za kasnije.
+          </p>
+        </article>
+        <article class="faq-card">
+          <h3 data-i18n="web.faq.6.q">Da li nudite održavanje?</h3>
+          <p data-i18n="web.faq.6.a">
+            Možemo da dogovorimo mesečno održavanje ili paket sati koje koristiš kad god ti zatrebaju izmene.
+          </p>
+        </article>
+      </div>
+    </section>
+
+   
+    <section id="contact" class="web-section contact-section contact reveal">
+      <div class="web-section-header">
+        <h2 class="web-section-title" data-i18n="web.contact.title">
+          Hajde da pokrenemo tvoj sajt
+        </h2>
+        <p class="web-section-lead" data-i18n="web.contact.lead">
+          Napiši ukratko čime se baviš, šta želiš od sajta i približan budžet.
+          Javljam se sa konkretnim predlogom i narednim koracima.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+       
+        <input
+          type="text"
+          name="company"
+          class="hp"
+          autocomplete="off"
+          tabindex="-1"
+          style="position:absolute;left:-5000px;opacity:0;"
+        >
+
+        <label>
+          <span data-i18n="contact.name">Your name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          <span data-i18n="contact.email">Your email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          <span data-i18n="contact.message">Message</span>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Ukratko opiši projekat, ciljeve i rok."
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit" id="sendBtn" class="btn-glass" data-i18n="contact.send">
+          <span class="btn-label">Send</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p id="status" class="status" style="margin-top:8px"></p>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> T•Solutions.</p></footer>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> T•Solutions.</p>
+  </footer>
+
   <script src="assets/main.js"></script>
+  <script src="assets/contact.js"></script>
 </body>
 </html>
