@@ -1,15 +1,16 @@
 :root{
-  --bg:#0b1220;
-  --card:rgba(255,255,255,.08);
-  --border:rgba(255,255,255,.12);
-  --text:#e7ecf3;
-  --muted:#a7b1c2;
+  --bg:#f7f9fc;
+  --card:rgba(0,0,0,.04);
+  --border:rgba(0,0,0,.12);
+  --text:#0b1220;
+  --muted:#4f5b70;
   --accent1:#56ccf2;
   --accent2:#2f80ed;
   --accent3:#2fd5a6;
   --radius:18px;
-  --shadow:0 20px 40px rgba(0,0,0,.35);
+  --shadow:0 20px 40px rgba(15,23,42,.12);
 }
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -129,9 +130,6 @@ html[lang="en"] .only-sr{display:none}
 }
 
 
-:root[data-theme="light"]{
-  --bg:#f7f9fc;--card:rgba(0,0,0,.04);--border:rgba(0,0,0,.12);--text:#0b1220;--muted:#4f5b70;
-}
 
 
 .btn-glass{
