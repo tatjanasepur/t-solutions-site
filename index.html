@@ -80,32 +80,52 @@
       <h2 data-i18n="contact.title">Let’s talk</h2>
       <p data-i18n="contact.desc">Tell us your idea. We’ll turn it into a solution.</p>
 
-      <form id="contactForm" class="contact-form">
-        
-        <input type="text" name="company" class="hp" autocomplete="off" tabindex="-1" style="position:absolute;left:-5000px;opacity:0;">
+      <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  class="contact-form"
+>
+  <!-- obavezno za Netlify -->
+  <input type="hidden" name="form-name" value="contact" />
 
-        <label>
-          <span data-i18n="contact.name">Your name</span>
-          <input type="text" name="name" placeholder="Your name" required>
-        </label>
+  <div class="field">
+    <label for="name" data-i18n="contact.name">Vaše ime</label>
+    <input
+      id="name"
+      name="name"
+      type="text"
+      required
+      autocomplete="name"
+    />
+  </div>
 
-        <label>
-          <span data-i18n="contact.email">Your email</span>
-          <input type="email" name="email" placeholder="you@example.com" required>
-        </label>
+  <div class="field">
+    <label for="email" data-i18n="contact.email">Vaš email</label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      required
+      autocomplete="email"
+    />
+  </div>
 
-        <label>
-          <span data-i18n="contact.message">Message</span>
-          <textarea name="message" rows="5" placeholder="What do you need?" required></textarea>
-        </label>
+  <div class="field">
+    <label for="message" data-i18n="contact.message">Poruka</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      required
+    ></textarea>
+  </div>
 
-        <button type="submit" id="sendBtn" class="btn-glass" data-i18n="contact.send">
-          <span class="btn-label">Send</span>
-          <span class="spinner" aria-hidden="true"></span>
-        </button>
+  <button type="submit" class="primary-btn">
+    <span data-i18n="contact.send">Pošalji</span>
+  </button>
+</form>
 
-        <p id="status" class="status" style="margin-top:8px"></p>
-      </form>
     </section>
   </main>
 
