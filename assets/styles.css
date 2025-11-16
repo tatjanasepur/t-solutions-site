@@ -3603,4 +3603,35 @@ html, body {
 .hero {
   background: transparent !important;
 }
+/* --- HARD FIX: sve prebacujemo na light varijante --- */
+
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --border: rgba(148, 163, 184, 0.35);
+  --text: #020617;
+  --muted: #6b7280;
+}
+
+/* za svaki slučaj */
+html,
+body {
+  background: #f7f9fc !important;
+  color: #020617;
+}
+
+/* dropdown meni da bude beo */
+.dropdown ul {
+  background: #ffffff !important;
+  color: #020617 !important;
+}
+
+/* kartice i forme koje ti na Gitu još uvek budu tamne */
+.contact-form,
+.web-feature-card,
+.feature-card,
+.how .step {
+  background: #ffffff !important;
+  color: #020617 !important;
+}
 
