@@ -76,57 +76,64 @@
       </article>
     </section>
 
-    <section id="contact" class="contact reveal">
+        <section id="contact" class="contact reveal">
       <h2 data-i18n="contact.title">Let’s talk</h2>
       <p data-i18n="contact.desc">Tell us your idea. We’ll turn it into a solution.</p>
 
       <form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  class="contact-form"
->
-  <!-- obavezno za Netlify -->
-  <input type="hidden" name="form-name" value="contact" />
+        id="contactForm"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="contact-form"
+      >
+        <!-- obavezno za Netlify -->
+        <input type="hidden" name="form-name" value="contact" />
 
-  <div class="field">
-    <label for="name" data-i18n="contact.name">Vaše ime</label>
-    <input
-      id="name"
-      name="name"
-      type="text"
-      required
-      autocomplete="name"
-    />
-  </div>
+        <label class="field">
+          <span data-i18n="contact.name">Vaše ime</span>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            autocomplete="name"
+            placeholder="Your name"
+          />
+        </label>
 
-  <div class="field">
-    <label for="email" data-i18n="contact.email">Vaš email</label>
-    <input
-      id="email"
-      name="email"
-      type="email"
-      required
-      autocomplete="email"
-    />
-  </div>
+        <label class="field">
+          <span data-i18n="contact.email">Vaš email</span>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            placeholder="you@example.com"
+          />
+        </label>
 
-  <div class="field">
-    <label for="message" data-i18n="contact.message">Poruka</label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      required
-    ></textarea>
-  </div>
+        <label class="field">
+          <span data-i18n="contact.message">Poruka</span>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Ukratko opiši projekat, ciljeve i rok."
+          ></textarea>
+        </label>
 
-  <button type="submit" class="primary-btn">
-    <span data-i18n="contact.send">Pošalji</span>
-  </button>
-</form>
-
+        <button type="submit" id="sendBtn" class="btn-glass">
+          <span class="btn-label" data-i18n="contact.send">Pošalji</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </form>
     </section>
+
+
+  
   </main>
 
   <footer class="site-footer">
